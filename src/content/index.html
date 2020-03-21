@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brenton Jackson</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css"> -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/5c5f192669.js" crossorigin="anonymous"></script>
+    <!-- Animations -->
+<!--     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css"> -->
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav id="navbar" class="nav">
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="#welcome-section">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#projects">Work</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Home section (About) -->
+    <section id="welcome-section" class="about">
+        <h1 >Hi, I'm Brenton</h1>
+        <p class="subheader animated bounceInLeft delay-1s">designer and web developer</p>
+        <!-- Scroll down icon -->
+        <!-- Scroll down button -->
+<!--    <a href="#projects" class="more">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 64">
+                <path id="arrow" class="more_arrow animated infinite pulse" fill="#ffffff" d="M14.8,46.3l-5.4,4.9L4,46.3c-0.5-0.5-1.3-0.5-1.8,0s-0.5,1.2,0,1.6l6.2,5.7c0.5,0.5,1.3,0.5,1.8,0l6.2-5.7c0.5-0.5,0.5-1.2,0-1.6C16.1,45.9,15.3,45.9,14.8,46.3z"></path>
+                <g id="mouse_1_" fill="#ffffff">
+                    <path id="frame" d="M9.5,2C13.6,2,17,5.4,17,9.5v7c0,4.1-3.4,7.5-7.5,7.5S2,20.6,2,16.5v-7C2,5.4,5.4,2,9.5,2 M9.5,0C4.3,0,0,4.3,0,9.5v7C0,21.7,4.3,26,9.5,26s9.5-4.3,9.5-9.5v-7C19,4.3,14.7,0,9.5,0L9.5,0z">
+                    </path>
+                    <path id="scroll" d="M9,5h1c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1H9C8.4,9,8,8.6,8,8V6C8,5.4,8.4,5,9,5z">
+                    </path>
+                </g>
+            </svg>
+        </a> -->
+        
+        <!-- Resume button -->
+        <a id="resume_link" target="_blank" href="Brenton-Jackson-resume.pdf">
+            <button class="resume_btn">
+                <i id="download-icon" class="fa fa-download" aria-hidden="true"></i>
+                Resume
+            </button>
+        </a>
+        
+        <!-- Scroll to top icon -->
+        <i id="myBtn" class="fas fa-arrow-up"></i>
+        <button id="myBtn" title="Go to top">Top</button>
+    </section>
+    
+
+    <!-- Projects section -->
+    <section id="projects" class="projects">
+        
+        <!-- Header -->
+        <h2 class="project-header">Recent Projects</h2>
+        
+        <!-- Projects container -->
+        <div class="project-container">
+            <a href="https://brentonjackson.github.io/vower" target="_blank" class="project-tile">
+                <img id="vower" src="vower-landing-page.png" class="project-image" alt="project">
+                <p class="project-title">
+                    Landing Page Redesign
+                </p>
+                
+                <div id="project_details_container"></div>
+
+            </a>
+            <a href="https://github.com/brentonjackson/clarion" target="_blank" class="project-tile">
+                <img id="clarion" src="clarion.png" class="project-image" alt="project">
+                <p class="project-title">
+                    Mobile App Design
+                </p>
+            </a>
+            <a href="https://brentonjackson.github.io/tribute" target="_blank" class="project-tile">
+                <img src="witcher-tribute.png" class="project-image" alt="project">
+                <p class="project-title">
+                    Tribute Page
+                </p>
+            </a>
+            <a href="https://brentonjackson.github.io/survey" target="_blank" class="project-tile">
+                <img src="survey.png" class="project-image" alt="project">
+                <p class="project-title">
+                    Survey Form
+                </p>
+            </a>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <div class="header">
+            <h2>Let's work together...</h2>
+            <p>Find me on these platforms.</p>
+        </div>
+        <ul class="socials">
+            <li class="social-link"><a href="https://www.linkedin.com/in/jacksonbrenton" target="_blank"><i class="fab fa-linkedin-in social-icon"></i> LinkedIn</a></li>
+            <li class="social-link"><a href="https://github.com/brentonjackson" target="_blank" id="profile-link"><i class="fab fa-github github-icon fa-lg social-icon"></i> GitHub</a></li>
+            <li class="social-link"><a href="mailto:bjackson71@gatech.edu" target="_blank"><i class="fas fa-at social-icon"></i> Email</a></li>
+        </ul>
+    </section>
+    <!-- Footer -->
+    <section class="foot">
+        <p>Created by Brenton Jackson <a href="https://github.com/brentonjackson/portfolio" class="github-link" target="_blank"><i class="fab fa-github github-icon fa-lg"></i></a></p>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Load React -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Load JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Load React component -->
+    <script src="project_details.min.js"></script>
+</body>
+</html>
