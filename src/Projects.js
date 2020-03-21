@@ -10,7 +10,7 @@ class Projects extends React.Component {
 		    	
 		    	<div className="project-container">
 			    	<Thumbnail
-			    		link="https://brentonjackson.github.io/vower"
+			    		link="https://driventocode.com"
 			    		image={require("./content/react-portfolio.png")}
 			    		title="Portfolio Website"
 					/>
