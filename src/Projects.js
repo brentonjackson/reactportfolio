@@ -1,7 +1,5 @@
 import React from 'react';
 import Thumbnail from './Thumbnail.js';
-import './content/styles.css';
-// import './App.css';
 
  
 class Projects extends React.Component {

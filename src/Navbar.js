@@ -1,5 +1,4 @@
 import React from 'react';
-import './content/styles.css';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import About from './About.js';
 import Contact from './Contact.js';
@@ -17,11 +16,9 @@ export default class Navbar extends React.Component {
 			            </li>
 			            <li className="navbar-item">
 			                <Link to="/projects">Projects</Link>
-			                {/*<a href={Projects}>Projects</a>*/}
 			            </li>
 			            <li className="navbar-item">
 			                <Link to="/contact">Contact</Link>
-			                {/*<a href={Contact}>Contact</a>*/}
 			            </li>
 			        </ul>
 			    </nav>

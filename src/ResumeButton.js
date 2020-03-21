@@ -1,5 +1,4 @@
 import React from 'react';
-import './content/styles.css';
 import resume from "./content/Brenton-Jackson-resume.pdf";
 
 

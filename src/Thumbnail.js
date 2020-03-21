@@ -1,6 +1,4 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
-import './content/styles.css'
 
 class Thumbnail extends React.Component {
 	render() {	
