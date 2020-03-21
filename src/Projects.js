@@ -11,6 +11,21 @@ class Projects extends React.Component {
 		    	<div className="project-container">
 			    	<Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
+			    		image={require("./content/react-portfolio.png")}
+			    		title="Portfolio Website"
+					/>
+					<div className="project-details">
+						<h2>Portfolio Website</h2><br/><br/>
+						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
+						<h3>Summary</h3>
+						<p className="summary">This site was my first shipped site in React. I wanted to make my site easier to update and ship by piecing together components. <br/>
+							Firsts: Learning how to create React components, pass props, use JSX, React Router, and npm extensively.<br/> 
+							I learned how to create React apps from scratch as well as convert pre-existing sites, as well as a lot about deployment while doing this. <br/>
+							In learning the basics of React, this was a success!</p>
+					</div>
+
+			    	<Thumbnail
+			    		link="https://brentonjackson.github.io/vower"
 			    		image={require("./content/vower-landing-page.png")}
 			    		title="Landing Page Redesign"
 					/>
