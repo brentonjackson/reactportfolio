@@ -6,8 +6,8 @@ class Contact extends React.Component {
 		return (
 		    <div id="contact" className="contact">
 		        <div className="header">
-		            <h2 classname="animated bounceIn">Let's work together...</h2>
-		            <p classname="animated bounceIn">Find me on these platforms.</p>
+		            <h2 className="animated slideInLeft slow">Let's work together...</h2>
+		            <p className="animated slideInRight slow">Find me on these platforms.</p>
 		        </div>
 		        <ul className="socials animated slideInUp slow">
 		            <li className="social-link"><a href="https://www.linkedin.com/in/jacksonbrenton" target="_blank"><i className="fab fa-linkedin-in social-icon"></i> LinkedIn</a></li>

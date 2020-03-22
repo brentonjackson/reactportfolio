@@ -9,14 +9,14 @@ export default class Navbar extends React.Component {
 				<nav id="navbar" className="nav">
 			        <ul className="navbar-menu">
 			            <li className="navbar-item">
-			                <NavLink to="/" exact activeStyle = {{background: 'var(--navbar)', color: 'var(--accent-color'}}>Home</NavLink>
+			                <NavLink to="/" className="nav-link" exact >Home</NavLink>
 			                {/*<a href={About}>About</a>*/}
 			            </li>
 			            <li className="navbar-item">
-			                <NavLink to="/projects" activeStyle = {{background: 'var(--navbar)', color: 'var(--accent-color'}}>Projects</NavLink>
+			                <NavLink to="/projects" className="nav-link" >Projects</NavLink>
 			            </li>
 			            <li className="navbar-item">
-			                <NavLink to="/contact" activeStyle = {{background: 'var(--navbar)', color: 'var(--accent-color'}}>Contact</NavLink>
+			                <NavLink to="/contact" className="nav-link" >Contact</NavLink>
 			            </li>
 			        </ul>
 			    </nav>
