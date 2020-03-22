@@ -7,7 +7,7 @@ class ResumeButton extends React.Component {
 	render() {	
 		return(
 			<a href={resume} id="resume_link" target="_blank">
-				<button className="resume_btn">
+				<button className="resume_btn animated pulse infinite slow">
 		                <i id="download-icon" className="fa fa-download" aria-hidden="true"></i>
 		                Resume
 		        </button>

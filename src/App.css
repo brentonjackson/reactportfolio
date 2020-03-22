@@ -15,6 +15,7 @@
   --blue-gradient: #004445;
   --main-white: #EDEDEDFF;
   --footer-border: #2c7873;
+  --navbar: #DBDBDB;
 }
 
 /**
@@ -181,11 +182,12 @@ img {
   color: var(--main-white);
   font-style: italic;
   font-size: 3rem;
-  /* font-weight: 200; */
+  animation-duration: 2s;
+  animation-delay: .4s;
 }
 
-.subheader.animated {
-  animation-duration: 2s;
+#animatedSubhead {
+  /* animation-duration: 6s; */
 }
 
 #download-icon {

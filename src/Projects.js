@@ -6,7 +6,7 @@ class Projects extends React.Component {
 	render() {  
 		return (
 		    <div className = "projects">
-		    	<h2 className="project-header">Recent Projects</h2>
+		    	<h2 className="project-header animated slideInDown slow">Recent Projects</h2>
 		    	
 		    	<div className="project-container">
 			    	<Thumbnail
@@ -14,7 +14,7 @@ class Projects extends React.Component {
 			    		image={require("./content/react-portfolio.png")}
 			    		title="Portfolio Website"
 					/>
-					<div className="project-details">
+					<div className="project-details animated slideInRight slow">
 						<h2>Portfolio Website</h2><br/><br/>
 						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
 						<h3>Summary</h3>
@@ -29,7 +29,7 @@ class Projects extends React.Component {
 			    		image={require("./content/vower-landing-page.png")}
 			    		title="Landing Page Redesign"
 					/>
-					<div className="project-details">
+					<div className="project-details animated slideInRight slow">
 						<h2>Landing Page Redesign</h2><br/><br/>
 						<p>HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
 						<h3>Summary</h3>
@@ -44,7 +44,7 @@ class Projects extends React.Component {
 			    		image={require("./content/clarion.png")}
 			    		title="Mobile App Design"
 			    	/>
-					<div className="project-details">
+					<div className="project-details animated slideInRight slow">
 						<h2>Mobile App Design</h2><br/><br/>
 						<p>Designed/ prototyped with Photoshop, Adobe XD</p><br/><br/>
 						<h3>Summary</h3>
@@ -57,7 +57,7 @@ class Projects extends React.Component {
 			    		image={require("./content/witcher-tribute.png")}
 			    		title="Video Background Bio Page"
 					/>
-					<div className="project-details">
+					<div className="project-details animated slideInRight slow">
 						<h2>Video Background Bio Page</h2><br/><br/>
 						<p>HTML, CSS, JavaScript					</p><br/><br/>
 						<h3>Summary</h3>
