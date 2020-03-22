@@ -191,6 +191,7 @@ img {
   font-size: 3rem;
   animation-duration: 2s;
   animation-delay: .4s;
+  margin-bottom: 30vh;
 }
 
 #animatedSubhead {
@@ -211,7 +212,6 @@ img {
 }
 .resume_btn {
     font-size: 1.5rem;
-    margin-top: 30vh;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     padding: 10px;
