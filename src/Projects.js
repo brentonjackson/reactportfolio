@@ -52,6 +52,18 @@ class Projects extends React.Component {
 						</p>
 					</div>
 					<Thumbnail
+			    		link="https://brentonjackson.github.io/bubbles"
+			    		image={require("./content/bubbles.gif")}
+			    		title="Take A Break!"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Bubbles</h2><br/><br/>
+						<p>HTML5 Canvas, JavaScript</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary one-line">Simple JS app using HTML5 Canvas. Take a break and try it out! 
+						</p>
+					</div>
+					<Thumbnail
 			    		link="https://brentonjackson.github.io/tribute"
 			    		image={require("./content/witcher-tribute.png")}
 			    		title="Video Background Bio Page"
