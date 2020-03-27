@@ -60,7 +60,7 @@ class Projects extends React.Component {
 						<h2>Mobile App Development</h2><br/><br/>
 						<p>Java, Android Studio</p><br/><br/>
 						<h3>Summary</h3>
-						<p className="summary">Built app so create, edit, and delete flashcards. Perfect for studying. Click the picture to download the Android app from my Github and try it out! 
+						<p className="summary">Built app to create, edit, and delete flashcards. Perfect for studying. Click the picture to download the Android app from my Github and try it out! 
 						</p>
 					</div>
 					<Thumbnail
