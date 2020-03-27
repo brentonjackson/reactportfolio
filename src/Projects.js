@@ -52,6 +52,18 @@ class Projects extends React.Component {
 						</p>
 					</div>
 					<Thumbnail
+			    		link="https://github.com/brentonjackson/Flashcard-Android-App"
+			    		image={require("./content/flashcard-app.png")}
+			    		title="Mobile App Development"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Mobile App Development</h2><br/><br/>
+						<p>Java, Android Studio</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">Built app so create, edit, and delete flashcards. Perfect for studying. Click the picture to download the Android app from my Github and try it out! 
+						</p>
+					</div>
+					<Thumbnail
 			    		link="https://brentonjackson.github.io/bubbles"
 			    		image={require("./content/bubbles.gif")}
 			    		title="Take A Break!"

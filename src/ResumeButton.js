@@ -6,7 +6,7 @@ import resume from "./content/Brenton-Jackson-resume.pdf";
 class ResumeButton extends React.Component {
 	render() {	
 		return(
-			<a href={resume} id="resume_link" target="_blank">
+			<a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer">
 				<button className="resume_btn animated pulse infinite slow">
 		                <i id="download-icon" className="fa fa-download" aria-hidden="true"></i>
 		                Resume
