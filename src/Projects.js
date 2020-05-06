@@ -37,34 +37,7 @@ class Projects extends React.Component {
 						Uses Flexbox for responsiveness and JS for click events.
 						</p>
 					</div>
-
-			    	<Thumbnail
-			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
-			    		image={require("./content/tictactoe.PNG")}
-			    		title="ReactJS Game"
-			    	/>
-					<div className="project-details animated slideInRight slow">
-						<h2>ReactJS Game</h2><br/><br/>
-						<p>React, JavaScript, StyledComponents</p><br/><br/>
-						<h3>Summary</h3>
-						<p className="summary">Built a Tic-Tac-Toe game in React. First project getting familiar with React concepts like state, props, and lifecycle methods -
-						as well as using other libraries in the React ecosystem instead of just relying on JavaScript, HTML, and CSS solutions. 
-						</p>
-					</div>
-
-			    	<Thumbnail
-			    		link="https://github.com/brentonjackson/Flashcard-Android-App"
-			    		image={require("./content/flashcard-app.png")}
-			    		title="Mobile App Development"
-			    	/>
-					<div className="project-details animated slideInRight slow">
-						<h2>Mobile App Development</h2><br/><br/>
-						<p>Java, Android Studio, SQL</p><br/><br/>
-						<h3>Summary</h3>
-						<p className="summary">Built app to create, edit, and delete flashcards. Uses SQL to save content in a database. Perfect for studying. Click the picture to download the Android app from my Github and try it out! 
-						</p>
-					</div>
-					
+				
 			    	<Thumbnail
 			    		link="https://driventocode.com"
 			    		image={require("./content/react-portfolio.png")}
@@ -94,6 +67,47 @@ class Projects extends React.Component {
 							Presenting to an actual client made me cognizant about the
 							presentation of my work and improved my mockup skills. My client loved the end result!</p>
 					</div>
+					
+					<Thumbnail
+			    		link="https://brentonjackson.github.io/tribute"
+			    		image={require("./content/witcher-tribute.png")}
+			    		title="Video Background Bio Page"
+					/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Video Background Bio Page</h2><br/><br/>
+						<p>HTML, CSS, JavaScript					</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">One of my firsts using HTML and CSS. I played around with CSS frameworks like Bootstrap and W3.CSS.
+						This helped me grasp Responsive Design and more advanced CSS concepts.</p>
+					</div>
+
+					<Thumbnail
+			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
+			    		image={require("./content/tictactoe.PNG")}
+			    		title="ReactJS Game"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>ReactJS Game</h2><br/><br/>
+						<p>React, JavaScript, StyledComponents</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">Built a Tic-Tac-Toe game in React. First project getting familiar with React concepts like state, props, and lifecycle methods -
+						as well as using other libraries in the React ecosystem instead of just relying on JavaScript, HTML, and CSS solutions.
+						Try it out! 
+						</p>
+					</div>
+
+			    	<Thumbnail
+			    		link="https://github.com/brentonjackson/Flashcard-Android-App"
+			    		image={require("./content/flashcard-app.png")}
+			    		title="Mobile App Development"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Mobile App Development</h2><br/><br/>
+						<p>Java, Android Studio, SQL</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">Built app to create, edit, and delete flashcards. Uses SQL to save content in a database. Perfect for studying. Click the picture to download the Android app from my Github and try it out! 
+						</p>
+					</div>
 
 					<Thumbnail
 			    		link="https://github.com/brentonjackson/clarion"
@@ -107,20 +121,6 @@ class Projects extends React.Component {
 						<p className="summary">Goal: To simplify the decision users had to make when deciding how to travel anywhere.
 						This helped me improve my prototyping skills and stretched my abilities using Adobe XD. Also piqued my interest in REST APIs 
 						</p>
-					</div>
-					
-
-					<Thumbnail
-			    		link="https://brentonjackson.github.io/tribute"
-			    		image={require("./content/witcher-tribute.png")}
-			    		title="Video Background Bio Page"
-					/>
-					<div className="project-details animated slideInRight slow">
-						<h2>Video Background Bio Page</h2><br/><br/>
-						<p>HTML, CSS, JavaScript					</p><br/><br/>
-						<h3>Summary</h3>
-						<p className="summary">One of my firsts using HTML and CSS. I played around with CSS frameworks like Bootstrap and W3.CSS.
-						This helped me grasp Responsive Design and more advanced CSS concepts.</p>
 					</div>
 				</div>
 		    </div>
