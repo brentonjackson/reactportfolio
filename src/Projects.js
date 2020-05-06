@@ -10,7 +10,7 @@ class Projects extends React.Component {
 		    	
 		    	<div className="project-container">
 			    	<Thumbnail
-			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
+			    		link="https://github.com/brentonjackson/fitnessgram/"
 			    		image={require("./content/fitnessgram.png")}
 			    		title="FitnessGram"
 			    	/>
