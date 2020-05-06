@@ -11,6 +11,21 @@ class Projects extends React.Component {
 		    	<div className="project-container">
 			    	<Thumbnail
 			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
+			    		image={require("./content/fitnessgram.png")}
+			    		title="FitnessGram"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Fitness Motivation Site</h2><br/><br/>
+						<p>JS, HTML, CSS</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">Responsive site to display images. Built as a hub to motivate users while working out - as a reminder that giving
+						just a little bit more effort is always worth it. Conceived as part of a larger fitness project I'm working on.
+						Uses Flexbox for responsiveness and JS for click events.
+						</p>
+					</div>
+
+			    	<Thumbnail
+			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
 			    		image={require("./content/tictactoe.PNG")}
 			    		title="ReactJS Game"
 			    	/>
