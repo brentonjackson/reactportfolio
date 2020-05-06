@@ -1,4 +1,5 @@
 import React from 'react';
+import './thumbnail.css';
 
 class Thumbnail extends React.Component {
 	// add default state to animate transition

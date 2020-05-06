@@ -250,7 +250,7 @@ a.more:hover {
 ***************************************************************************************************************************/
 .projects {
   /* background: radial-gradient(var(--secondary-color), var(--blue-gradient)); */
-  background: var(--main-white);
+  /* background-color: var(--main-white); */
 
   padding: 10rem 2rem 50vh 2rem;
   text-align: center;
@@ -289,7 +289,7 @@ a.more:hover {
 }
 
 @media (max-width: 1400px) {
-  .projects: {
+  .projects {
     padding-right: 20px;
   }
 }
@@ -410,7 +410,7 @@ a.more:hover {
 }
 
 
-/* Contacts section */
+/********************************** Contacts section *************************************/
 
 .contact {
   padding: 0 2rem;
