@@ -60,7 +60,7 @@ class Projects extends React.Component {
 			    		title="Dynamic Bio Page"
 					/>
 					<div className="project-details animated slideInRight slow">
-						<h2>Video Background Page</h2><br/><br/>
+						<h2>Dynamic Bio Page</h2><br/><br/>
 						<p>HTML, CSS, JavaScript</p><br/><br/>
 						<h3>Summary</h3>
 						<p className="summary">
