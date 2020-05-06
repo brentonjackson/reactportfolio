@@ -54,31 +54,19 @@ class Projects extends React.Component {
 							presentation of my work and improved my mockup skills. My client loved the end result!</p>
 					</div>
 				
-			    	<Thumbnail
-			    		link="https://driventocode.com"
-			    		image={require("./content/react-portfolio.png")}
-			    		title="Portfolio Website"
-					/>
-					<div className="project-details animated slideInRight slow">
-						<h2>Portfolio Website</h2><br/><br/>
-						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
-						<h3>Summary</h3>
-						<p className="summary">Refactored portfolio in React. 
-							I learned how to create React apps from scratch as well as refactor pre-existing HTML sites. Also learned a lot about deployment while doing this.
-						</p>
-					</div>
-					
 					<Thumbnail
-			    		link="https://brentonjackson.github.io/tribute"
-			    		image={require("./content/witcher-tribute.png")}
-			    		title="Video Background Bio Page"
+			    		link="https://brentonjackson.github.io/dynamic-bio"
+			    		image={require("./content/mj-bio.png")}
+			    		title="Dynamic Bio Page"
 					/>
 					<div className="project-details animated slideInRight slow">
-						<h2>Video Background Bio Page</h2><br/><br/>
-						<p>HTML, CSS, JavaScript					</p><br/><br/>
+						<h2>Video Background Page</h2><br/><br/>
+						<p>HTML, CSS, JavaScript</p><br/><br/>
 						<h3>Summary</h3>
-						<p className="summary">One of my firsts using HTML and CSS. I played around with CSS frameworks like Bootstrap and W3.CSS.
-						This helped me grasp Responsive Design and more advanced CSS concepts.</p>
+						<p className="summary">
+							Alternative to a static bio page. This dynamic page allows users to get a better feel of the subject.
+							Used W3CSS to explore and compare to Bootstrap.
+						</p>
 					</div>
 
 					<Thumbnail
@@ -120,6 +108,20 @@ class Projects extends React.Component {
 						<h3>Summary</h3>
 						<p className="summary">Goal: To simplify the decision users had to make when deciding how to travel anywhere.
 						This helped me improve my prototyping skills and stretched my abilities using Adobe XD. Also piqued my interest in REST APIs 
+						</p>
+					</div>
+
+					<Thumbnail
+			    		link="https://driventocode.com"
+			    		image={require("./content/react-portfolio.png")}
+			    		title="Portfolio Website"
+					/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Portfolio Website</h2><br/><br/>
+						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
+						<h3>Summary</h3>
+						<p className="summary">Refactored portfolio in React. 
+							I learned how to create React apps from scratch as well as refactor pre-existing HTML sites. Also learned a lot about deployment while doing this.
 						</p>
 					</div>
 				</div>
