@@ -37,22 +37,8 @@ class Projects extends React.Component {
 						Uses Flexbox for responsiveness and JS for click events.
 						</p>
 					</div>
-				
-			    	<Thumbnail
-			    		link="https://driventocode.com"
-			    		image={require("./content/react-portfolio.png")}
-			    		title="Portfolio Website"
-					/>
-					<div className="project-details animated slideInRight slow">
-						<h2>Portfolio Website</h2><br/><br/>
-						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
-						<h3>Summary</h3>
-						<p className="summary">Refactored portfolio in React. 
-							I learned how to create React apps from scratch as well as refactor pre-existing HTML sites. Also learned a lot about deployment while doing this.
-						</p>
-					</div>
 
-			    	<Thumbnail
+					<Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
 			    		image={require("./content/vower-landing-page.png")}
 			    		title="Landing Page Redesign"
@@ -66,6 +52,20 @@ class Projects extends React.Component {
 							and reduced distraction of the user by being minimal in my design approach. <br/>
 							Presenting to an actual client made me cognizant about the
 							presentation of my work and improved my mockup skills. My client loved the end result!</p>
+					</div>
+				
+			    	<Thumbnail
+			    		link="https://driventocode.com"
+			    		image={require("./content/react-portfolio.png")}
+			    		title="Portfolio Website"
+					/>
+					<div className="project-details animated slideInRight slow">
+						<h2>Portfolio Website</h2><br/><br/>
+						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
+						<h3>Summary</h3>
+						<p className="summary">Refactored portfolio in React. 
+							I learned how to create React apps from scratch as well as refactor pre-existing HTML sites. Also learned a lot about deployment while doing this.
+						</p>
 					</div>
 					
 					<Thumbnail
