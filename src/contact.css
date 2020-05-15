@@ -2,8 +2,8 @@
 
 .contact {
     padding: 0 2rem;
-    /* background: var(--secondary-color); */
-    background: linear-gradient(var(--secondary-color), var(--blue-gradient));
+    background: var(--primary-color);
+    /* background: linear-gradient(var(--secondary-color), var(--blue-gradient)); */
   
     height: 100vh;
     text-align: center;

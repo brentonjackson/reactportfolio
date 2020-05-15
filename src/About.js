@@ -7,7 +7,7 @@ class About extends React.Component{
 		return (
 			<div className="about-container">
 				<section id="about">
-					<h1>Hi, I'm Brenton</h1>
+					<h2>Brenton Jackson</h2>
 					<p id="animatedSubhead" className="subheader animated bounceInLeft">designer / front end developer</p>
 					<ResumeButton />
 				</section>
