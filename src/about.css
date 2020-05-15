@@ -1,0 +1,87 @@
+/***************************************************************************************************************************
+***********************************************Welcome section**************************************************************
+***************************************************************************************************************************/
+.about-container {
+  height: 90vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about {
+    background: white;
+    /* background: radial-gradient(var(--secondary-color), var(--blue-gradient)); */
+    color: var(--secondary-color);
+    order: 2;
+    display: flex;
+    flex-direction: column;
+      justify-content: center; /* horizontal center */
+      align-items: center; /* vertical center */
+      width: 100%;
+      text-align: center;
+  }
+  
+  #about p {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 3rem;
+    animation-duration: 2s;
+    animation-delay: .4s;
+    margin-bottom: 20vh;
+  }
+
+  #picture-container {
+    display: flex;
+    height: 150px;
+    width: 200px;
+    background: white;
+    margin: 25px 0;
+  }
+
+  #picture-container img {
+    border-color: var(--secondary-color);
+    border-radius: 50%;
+    border-style: solid;
+  }
+  
+  
+  #download-icon {
+      color:  var(--secondary-color);
+      padding-right: 5px;
+  }
+  
+  #resume_link {
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+  }
+  .resume_btn {
+      font-size: 1.5rem;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      padding: 10px;
+      font-family: inherit;
+      /* -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2); */
+              box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+      background-color: initial;
+      color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      border-style: solid;
+      cursor: pointer;
+  }
+  
+@media (min-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+  }
+
+  #picture-container {
+    width: 100%;
+
+  }
+}

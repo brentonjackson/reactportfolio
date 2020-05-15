@@ -5,7 +5,7 @@ import Footer from './Footer';
 import About from './About.js';
 import Projects from './Projects.js'; 
 import Contact from './Contact.js'; 
-import './App.css';
+import './app.css';
 
 
 

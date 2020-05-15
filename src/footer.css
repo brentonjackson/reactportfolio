@@ -1,0 +1,21 @@
+/* Footer section */
+
+.foot {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 2rem;
+    /* border-top: 4px solid var(--footer-border); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 1px 0 rgb(0, 0, 0, .5);
+  
+  }
+  
+  .github-icon {
+      padding-left: 5px;
+  }
+  
+  a {
+    cursor: pointer;
+  }

@@ -1,0 +1,29 @@
+/* Nav Bar */
+.nav {
+    /* background: var(--accent-color); */
+    background: var(--blue-gradient);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 1px 0 rgb(0, 0, 0, .5);
+    z-index: 1;
+    right: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.navbar-menu a {
+  padding: 2rem;
+  display: block;
+  font-size: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .nav-link:hover, .nav-link.active {
+    background: rgba(255,255,255,.1)
+  }
+}

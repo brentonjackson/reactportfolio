@@ -1,0 +1,36 @@
+/********************************** Contacts section *************************************/
+
+.contact {
+    padding: 0 2rem;
+    /* background: var(--secondary-color); */
+    background: linear-gradient(var(--secondary-color), var(--blue-gradient));
+  
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contact p {
+    font-style: italic;
+    padding-top: .5rem;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  .social-icon {
+    padding: 5px;
+  }
