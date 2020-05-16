@@ -38,7 +38,7 @@
   #picture-container {
     display: flex;
     height: 150px;
-    width: 200px;
+    width: 220px;
     margin: 45px 0 5px;
   }
 
@@ -89,7 +89,7 @@
   }
   #picture-container {
     height: 200px;
-    width: 250px;
+    width: 270px;
   }
 }    
 @media (min-width: 768px) {
