@@ -10,7 +10,6 @@ export default class Navbar extends React.Component {
 			        <ul className="navbar-menu">
 			            <li className="navbar-item">
 			                <NavLink to="/" className="nav-link" exact >Home</NavLink>
-			                {/*<a href={About}>About</a>*/}
 			            </li>
 			            <li className="navbar-item">
 			                <NavLink to="/projects" className="nav-link" >Projects</NavLink>
@@ -22,6 +21,9 @@ export default class Navbar extends React.Component {
 			                <NavLink to="/contact" className="nav-link" >Contact</NavLink>
 			            </li>
 			        </ul>
+					<ul className="navbar-menu">
+						<li></li>
+					</ul>
 			    </nav>
 			    
 		)

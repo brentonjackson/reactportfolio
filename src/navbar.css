@@ -17,9 +17,9 @@
 }
 
 .navbar-menu a {
-  padding: 2rem;
+  padding: 1.3rem;
   display: block;
-  font-size: 2rem;
+  font-size: 14px;
 }
 
 @media (min-width: 1200px) {

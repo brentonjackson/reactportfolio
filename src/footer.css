@@ -3,13 +3,12 @@
 .foot {
     text-align: center;
     background: var(--blue-gradient);
-    padding: 2rem;
+    padding: 1.5rem;
     /* border-top: 4px solid var(--footer-border); */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 -2px 1px 0 rgb(0, 0, 0, .5);
-  
   }
   
   .github-icon {
