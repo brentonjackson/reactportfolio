@@ -26,7 +26,7 @@ class Projects extends React.Component {
 
 			    	<Thumbnail
 			    		link="https://github.com/brentonjackson/fitnessgram/"
-			    		image={require("./content/fitnessgram-macbook.png")}
+			    		image={require("./content/fitnessgram.png")}
 			    		title="FitnessGram"
 			    	/>
 					<div className="project-details animated slideInRight slow">
@@ -41,7 +41,7 @@ class Projects extends React.Component {
 
 					<Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
-			    		image={require("./content/vower-macbook.png")}
+			    		image={require("./content/vower.png")}
 			    		title="Landing Page Redesign"
 					/>
 					<div className="project-details animated slideInRight slow">
@@ -57,7 +57,7 @@ class Projects extends React.Component {
 				
 					<Thumbnail
 			    		link="https://brentonjackson.github.io/dynamic-bio"
-			    		image={require("./content/mj-macbook.png")}
+			    		image={require("./content/mj.png")}
 			    		title="Dynamic Bio Page"
 					/>
 					<div className="project-details animated slideInRight slow">
@@ -87,7 +87,7 @@ class Projects extends React.Component {
 
 			    	<Thumbnail
 			    		link="https://github.com/brentonjackson/Flashcard-Android-App"
-			    		image={require("./content/flashcard-screenshot.png")}
+			    		image={require("./content/flashcard.png")}
 			    		title="Mobile App Development"
 			    	/>
 					<div className="project-details animated slideInRight slow">
@@ -100,7 +100,7 @@ class Projects extends React.Component {
 
 					<Thumbnail
 			    		link="https://github.com/brentonjackson/clarion"
-			    		image={require("./content/clarion.gif")}
+			    		image={require("./content/clarion.png")}
 			    		title="Mobile App Design"
 			    	/>
 					<div className="project-details animated slideInRight slow">
@@ -114,7 +114,7 @@ class Projects extends React.Component {
 
 					<Thumbnail
 			    		link="https://driventocode.com"
-			    		image={require("./content/react-portfolio-macbook.png")}
+			    		image={require("./content/react-portfolio.png")}
 			    		title="Portfolio Website"
 					/>
 					<div className="project-details animated slideInRight slow">
