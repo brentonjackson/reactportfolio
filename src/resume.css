@@ -1,0 +1,38 @@
+#resume-container {
+    height: 100vh;
+    padding: 80px 25px 0px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+
+.contact-list {
+    font-size: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section-header {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+.section-header + ul {
+    font-size: 10px;
+}
+
+
+
