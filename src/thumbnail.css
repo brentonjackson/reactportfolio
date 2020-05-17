@@ -22,7 +22,30 @@
     -webkit-border-radius: 2px;
             border-radius: 2px;
   }
-  
+
+.project-image {
+   width: 100%;
+   height: 190px;
+   object-fit: cover;
+   /* height: calc(100% - 6.8rem); */
+ }
+
+ @media (min-height: 640px) {
+   .project-image {
+      height: 225px;
+   }
+ }
+ @media (min-height: 730px) {
+   .project-image {
+      height: 235px;
+   }
+ }    
+ @media (min-width: 768px) {
+   .project-image {
+      height: 355px;
+   }
+ } 
+
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1200px)  {
 
@@ -50,5 +73,4 @@
    .project-title {
      padding: 1rem;
      font-size: 2rem;
-   
    }

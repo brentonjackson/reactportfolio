@@ -22,7 +22,7 @@ class Thumbnail extends React.Component {
 
 	render() {	
 		return (
-			<a onMouseEnter={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} className={this.state.className + " project-tile bounceInLeft slower"} target="_blank" rel="noopener noreferrer" href={this.props.link}>
+			<a className={this.state.className + " project-tile bounceInLeft slower"} onMouseEnter={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} target="_blank" rel="noopener noreferrer" href={this.props.link}>
 				<img className="project-image" alt="project" src={this.props.image}/>
 				<div className="project-title">{this.props.title}</div>
 			</a>
