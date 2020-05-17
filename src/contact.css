@@ -32,7 +32,6 @@
   
   .socials {
     display: flex;
-    justify-content: center;
     width: 250px;
     padding: 30px;
     flex-wrap: wrap;
