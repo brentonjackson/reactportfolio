@@ -17,26 +17,61 @@ class Resume extends React.Component {
                     <h3 className="section-header">Skills</h3>
                         <ul className="skills">
                             <li>Languages: JavaScript, Java, MATLAB, C++</li>
-                            <li>Technologies: React, MongoDB, Express, Node, HTML5,</li>
+                            <li>Technologies: React, MongoDB, Express, Node, HTML5, CSS3, jQuery, Bootstrap, git</li>
                             <li>Design: Research, Wireframing, Digital mockups</li>
                         </ul>
                     <h3 className="section-header">Education</h3>
                         <ul className="education">
-                            <li>Georgia Tech</li>
-                            <li>Big Nerd Ranch</li>
-                            <li>Codepath</li>
+                            <li className="content-header">Georgia Institute of Technology, Industrial Design - 2017-2020</li>
+                                <ul className="content">
+                                    <li>Extensive Coursework in Computer Engineering and Industrial Design</li>
+                                </ul>
+                            <li className="content-header">Big Nerd Ranch, Full Stack and React - 2020</li>
+                                <ul className="content">
+                                    <li>Learned to build responsive full-stack web applications with React, CSS3, and Node.js</li>
+                                </ul>
+                            <li className="content-header">Codepath, Mobile App Design - 2020</li>
+                                <ul className="content">
+                                    <li>3-month program learning Android Development in Java using Android Studio</li>
+                                </ul>
                         </ul>
                     <h3 className="section-header">Recent Projects</h3>
                     <ul className="recent-projects">
-                        <li>MERN Workout Tracker</li>
-                        <li>FitnessGram</li>
-                        <li>Personal Portfolio</li>
-                        <li>Android App</li>
+                        <li className="content-header">MERN Workout Tracker - https://github.com/brentonjackson/mern-workout-app</li>
+                            <ul className="content">
+                                <li>React, MongoDB, Express, Node, Auth0</li>
+                                <li>Designed/launched web app that allows users to keep track of their workouts and provides motivation to persevere</li>
+                                <li>Designed/implemented API to allow user to save, delete, update, and create new workouts</li>
+                            </ul>
+                        <li className="content-header">FitnessGram - https://brentonjackson.github.io/fitnessgram</li>
+                            <ul className="content">
+                                <li>JavaScript, CSS3, HTML</li>
+                                <li>  Developed site to help motivate users and hold themselves accountable while working out</li>
+                            </ul>
+                        <li className="content-header">Personal Portfolio - https://driventocode.com</li>
+                            <ul className="content">
+                                <li>React, JavaScript, jQuery, Animate.css, HTML, CSS</li>
+                                <li>  Designed/launched responsive website to showcase projects</li>
+                            </ul>
+                        <li className="content-header">Android App - https://github.com/brentonjackson/Flashcard-Android-App
+                            <ul className="content">
+                                <li>Android Studio, Java, SQL</li>
+                                <li>Developed Android App that creates, edits, saves, and deletes flashcards to and from database</li>
+                            </ul>
+                        </li>
                     </ul>
                     <h3 className="section-header">Relevant Experience</h3>
                     <ul className="experience">
-                        <li>Georgia Tech Design Bloc</li>
-                        <li>Georgia College, MATLAB Programmer</li>
+                        <li className="content-header">Georgia Tech Design Bloc, User Researcher - 2019</li>
+                            <ul className="content">
+                                <li>Researched MARTA bus-stops to gather needs and pain-points to improve rider experience</li>
+                                <li>Communicated observations, needs, and potential solutions to stakeholders</li>
+                            </ul>
+                        <li className="content-header">Georgia College, MATLAB Programmer - 2014-2016</li>
+                            <ul className="content">
+                                <li>Developed 3 sets of data catalogs in MATLAB to analyze and statistically compare with observed astronomy data</li>
+                                <li>Won two research grant proposals and presented at APS Physics Conferences with team</li>
+                            </ul>
                     </ul>
                 </div>
     		</div>

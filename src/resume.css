@@ -1,38 +1,65 @@
 #resume-container {
-    height: 100vh;
-    padding: 80px 25px 0px;
+    padding: 50px 25px 0px;
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .name {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 32px;
+    font-size: 32pt;
     font-weight: normal;
 }
 
 .subtitle {
     text-align: center;
-    font-size: 12px;
+    font-size: 12pt;
     color: var(--secondary-color);
+    margin-top: 5px;
 }
 
 .contact-list {
-    font-size: 9px;
+    font-size: 9pt;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 5px 0 25px;
 }
 
 .section-header {
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 14pt;
+    font-weight: 600;
+    text-transform: uppercase;
     color: var(--secondary-color);
+    margin-bottom: 2px;
 }
 
 .section-header + ul {
-    font-size: 10px;
+    font-size: 9pt;
+    margin-bottom: 15px;
 }
 
+.skills li {
+    padding: 2px;
+}
+
+.content-header {
+    font-size: 11pt;
+}
+
+.content-header ~ .content-header {
+    padding-top: 10px;
+}
+
+@media (min-height: 640px) {
+    .contact-list {
+        justify-content: space-evenly;
+    }
+}
+@media (min-height: 730px) {
+
+}    
+@media (min-width: 768px) {
+
+} 
 
 
