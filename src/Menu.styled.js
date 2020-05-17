@@ -22,9 +22,8 @@ export const StyledMenu = styled.nav`
   a {
     font-size: 2rem;
     text-transform: uppercase;
+    font-family: 'Montserrat';
     padding: 2rem 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
     color: var(--main-white);
     text-decoration: none;
     transition: color 0.3s linear;
@@ -33,5 +32,9 @@ export const StyledMenu = styled.nav`
     &:hover {
       color: black;
     }
+  }
+
+  span {
+      padding-right: 8px;
   }
 `;

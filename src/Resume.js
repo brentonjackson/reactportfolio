@@ -12,7 +12,7 @@ class Resume extends React.Component {
                         <li>(478)361-3238 | Atlanta, GA</li>
                         <li><a href="http://linkedin.com/in/jacksonbrenton" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                         <li><a href="http://github.com/brentonjackson" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a href="http://driventocode.com" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                        <li><a href="http://driventocode.com">Portfolio</a></li>
                     </ul>
                     <h3 className="section-header">Skills</h3>
                         <ul className="skills">

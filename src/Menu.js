@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
-// import './menu.css';
+import './menu.css';
 
 const Menu = ({open}) => {
     return (
