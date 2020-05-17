@@ -23,9 +23,6 @@ export default class Navbar extends React.Component {
 			                <NavLink to="/contact" className="nav-link" >Contact</NavLink>
 			            </li>
 			        </ul>
-					<ul className="navbar-menu">
-						<li></li>
-					</ul>
 			    </nav>
 			    
 		)
