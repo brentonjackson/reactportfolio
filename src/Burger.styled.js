@@ -9,7 +9,7 @@ export const StyledBurger = styled.button`
   justify-content: space-around;
   align-items: center;
   width: 30px;
-  height: 25px;
+  height: 30px;
   background: var(--blue-gradient);
   border: 1px solid transparent;
   border-radius: 10%;
@@ -28,7 +28,7 @@ export const StyledBurger = styled.button`
   
   
   div {
-    width: 20px;
+    width: 26px;
     height: 3px;
     background: var(--main-white);
     border-radius: 10px;
