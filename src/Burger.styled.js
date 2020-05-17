@@ -11,7 +11,7 @@ export const StyledBurger = styled.button`
   width: 30px;
   height: 25px;
   background: var(--blue-gradient);
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 10%;
   cursor: pointer;
   padding: 1.5px 0;

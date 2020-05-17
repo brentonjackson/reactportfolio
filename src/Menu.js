@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import resume from "./content/Brenton-Jackson-resume.pdf";
 import './menu.css';
 
 const Menu = ({open}) => {
@@ -13,7 +14,7 @@ const Menu = ({open}) => {
                 <span role="img" aria-label="projects">	&#128187;</span>
                 Projects
             </a>
-            <a href="/resume" className="menu">
+            <a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer" className="menu">
                 <span role="img" aria-label="resume">&#128188;</span>
                 Resume
             </a>
