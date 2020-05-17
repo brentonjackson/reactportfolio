@@ -9,6 +9,7 @@
     box-shadow: 0 2px 1px 0 rgb(0, 0, 0, .5);
     z-index: 1;
     right: 0;
+    text-transform: uppercase;
 }
 
 .navbar-menu {

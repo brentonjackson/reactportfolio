@@ -5,9 +5,9 @@ class Contact extends React.Component {
 	render() {
 		return (
 		    <div id="contact" className="contact">
-		        <div className="header">
-		            <h2 className="animated slideInLeft slow">Let's work together...</h2>
-		            <p className="animated slideInRight slow">Find me on these platforms.</p>
+		        <div className="contact-header">
+		            <h2 className="animated slideInLeft slow">Give me a shout</h2>
+		            <p className="animated slideInRight slow">Email is the best way to reach me.<br /> I'm usually in the Atlanta area if you want to meet in person. Let's grab some coffee!</p>
 		        </div>
 		        <ul className="socials animated slideInUp slow">
 		            <li className="social-link"><a href="https://www.linkedin.com/in/jacksonbrenton" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in social-icon"></i> LinkedIn</a></li>

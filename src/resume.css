@@ -20,8 +20,10 @@
 .contact-list {
     font-size: 9pt;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: 5px 0 25px;
 }
 
@@ -46,20 +48,56 @@
     font-size: 11pt;
 }
 
+.contact-list a, .content-header a {
+    text-decoration: underline;
+    color: inherit;
+    cursor: pointer;
+}
+
 .content-header ~ .content-header {
     padding-top: 10px;
 }
 
+.recent-projects .content, .experience .content{
+    list-style-type: disc;
+}
+
 @media (min-height: 640px) {
-    .contact-list {
-        justify-content: space-evenly;
-    }
+
 }
 @media (min-height: 730px) {
 
 }    
 @media (min-width: 768px) {
+    #resume-container {
+        padding: 100px 250px;
+        color: black;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .subtitle {
+        font-size: 16pt;
+    }
+    
+    .contact-list {
+        font-size: 12pt;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px 0 25px;
+    }
+    
+    .section-header {
+        font-size: 16pt;
+    }
+    
+    .section-header + ul {
+        font-size: 12pt;
+        margin-bottom: 15px;
+    }
 
+    .content-header {
+        font-size: 12pt;
+    }
 } 
 
 

@@ -10,9 +10,9 @@ class Resume extends React.Component {
                     <p className="subtitle">Software Developer</p>
                     <ul className="contact-list"><li>brenton.jackson@gatech.edu</li>
                         <li>(478)361-3238 | Atlanta, GA</li>
-                        <li>linkedin.com/in/jacksonbrenton</li>
-                        <li>github.com/brentonjackson</li>
-                        <li>driventocode.com</li>
+                        <li><a href="http://linkedin.com/in/jacksonbrenton">LinkedIn</a></li>
+                        <li><a href="http://github.com/brentonjackson">GitHub</a></li>
+                        <li><a href="http://driventocode.com">Portfolio</a></li>
                     </ul>
                     <h3 className="section-header">Skills</h3>
                         <ul className="skills">
@@ -37,28 +37,27 @@ class Resume extends React.Component {
                         </ul>
                     <h3 className="section-header">Recent Projects</h3>
                     <ul className="recent-projects">
-                        <li className="content-header">MERN Workout Tracker - https://github.com/brentonjackson/mern-workout-app</li>
+                        <li className="content-header"><a href="https://github.com/brentonjackson/mern-workout-app" target="_blank">MERN Workout Tracker</a></li>
                             <ul className="content">
                                 <li>React, MongoDB, Express, Node, Auth0</li>
                                 <li>Designed/launched web app that allows users to keep track of their workouts and provides motivation to persevere</li>
                                 <li>Designed/implemented API to allow user to save, delete, update, and create new workouts</li>
                             </ul>
-                        <li className="content-header">FitnessGram - https://brentonjackson.github.io/fitnessgram</li>
+                        <li className="content-header"><a href="https://brentonjackson.github.io/fitnessgram">FitnessGram</a></li>
                             <ul className="content">
                                 <li>JavaScript, CSS3, HTML</li>
                                 <li>  Developed site to help motivate users and hold themselves accountable while working out</li>
                             </ul>
-                        <li className="content-header">Personal Portfolio - https://driventocode.com</li>
+                        <li className="content-header"><a href="https://driventocode.com">Personal Portfolio</a></li>
                             <ul className="content">
                                 <li>React, JavaScript, jQuery, Animate.css, HTML, CSS</li>
                                 <li>  Designed/launched responsive website to showcase projects</li>
                             </ul>
-                        <li className="content-header">Android App - https://github.com/brentonjackson/Flashcard-Android-App
+                        <li className="content-header"><a href="https://github.com/brentonjackson/Flashcard-Android-App">Android App</a></li>
                             <ul className="content">
                                 <li>Android Studio, Java, SQL</li>
                                 <li>Developed Android App that creates, edits, saves, and deletes flashcards to and from database</li>
                             </ul>
-                        </li>
                     </ul>
                     <h3 className="section-header">Relevant Experience</h3>
                     <ul className="experience">

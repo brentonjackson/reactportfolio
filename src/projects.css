@@ -22,6 +22,7 @@
   .summary {
     text-align: justify;
     padding-top: 2rem;
+    line-height: 26px;
   }
   
   .one-line {
