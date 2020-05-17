@@ -14,17 +14,25 @@
 
 .navbar-menu {
   display: flex;
-  margin-right: 2rem;
+  margin-right: 5px;
 }
 
 .navbar-menu a {
-  padding: 1.3rem;
+  padding: 5px;
+  font-size: 1.7rem;
   display: block;
-  font-size: 14px;
 }
 
 @media (min-width: 1200px) {
   .nav-link:hover, .nav-link.active {
     background: rgba(255,255,255,.1)
+  }
+
+  .navbar-menu {
+    margin-right: 2rem;
+  }
+
+  .navbar-menu a {
+    padding: 1.3rem;
   }
 }
