@@ -1,0 +1,31 @@
+.styled-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--blue-gradient);
+    /* height: 100vh; */
+    text-align: left;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    transform: translateY(-100%);
+  }
+  
+  a.menu {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: var(--main-white);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    text-align: center;
+  }
+  
+  a.menu:hover {
+    color: black;
+  }

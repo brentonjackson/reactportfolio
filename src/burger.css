@@ -1,0 +1,51 @@
+.burger-nav {
+    background: var(--blue-gradient);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    padding: 18px;
+    width: 100%;
+    z-index: 10;
+    right: 0;
+    border-bottom: 1px solid black;
+  }
+  
+  .styled-button {
+    position: absolute;
+    /* top: 2%; */
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 18px;
+    background: var(--blue-gradient);
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 0;
+    z-index: 10;
+    border-radius: 10%;
+  }
+  
+  .styled-button:focus {
+    outline: none;
+  }
+  
+  div.burger {
+    width: 20px;
+    height: 3px;
+    background: var(--main-white);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  @media (min-width: 1200px) {
+  
+    .burger-nav {
+      display: none;
+    }
+  }
