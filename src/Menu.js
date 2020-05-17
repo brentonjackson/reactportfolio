@@ -8,18 +8,14 @@ const Menu = ({open}) => {
     return (
         <StyledMenu open={open}>
             <a href="/" className="menu">
-                <span role="img" aria-label="home">	&#127968;</span>
                 Home</a>
             <a href="/projects" className="menu">
-                <span role="img" aria-label="projects">	&#128187;</span>
                 Projects
             </a>
             <a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer" className="menu">
-                <span role="img" aria-label="resume">&#128188;</span>
                 Resume
             </a>
             <a href="/contact" className="menu">
-                <span role="img" aria-label="contact">📧</span>
                 Contact
             </a>
         </StyledMenu>

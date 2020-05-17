@@ -16,7 +16,7 @@ export const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
-  transform: ${({ open }) => open ? 'translateY(-50)' : 'translateY(-100%)'};
+  transform: ${({ open }) => open ? 'translateY(4%)' : 'translateY(-100%)'};
   
 
   a {
@@ -32,9 +32,5 @@ export const StyledMenu = styled.nav`
     &:hover {
       color: black;
     }
-  }
-
-  span {
-      padding-right: 8px;
   }
 `;
