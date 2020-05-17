@@ -2,7 +2,7 @@
 .nav {
     /* background: var(--accent-color); */
     background: var(--blue-gradient);
-    display: flex;
+    display: none;
     justify-content: flex-end;
     position: fixed;
     width: 100%;
@@ -24,7 +24,60 @@
   display: block;
 }
 
+.burger-nav {
+  background: var(--blue-gradient);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: fixed;
+  padding: 18px;
+  width: 100%;
+    box-shadow: 0 2px 1px 0 rgb(0, 0, 0, .5);
+    z-index: 1;
+    right: 0;
+}
+
+.styled-button {
+  position: absolute;
+  /* top: 2%; */
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 18px;
+  background: var(--blue-gradient);
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 5px 0;
+  z-index: 10;
+  border-radius: 10%;
+}
+
+.styled-button:focus {
+  outline: none;
+}
+
+div.burger {
+  width: 20px;
+  height: 3px;
+  background: var(--main-white);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
 @media (min-width: 1200px) {
+  .nav {
+    display: flex;
+  }
+
+  .burger-nav {
+    display: none;
+  }
+  
   .nav-link:hover, .nav-link.active {
     background: rgba(255,255,255,.1)
   }

@@ -7,7 +7,7 @@ import resume from "./content/Brenton-Jackson-resume.pdf";
 export default class Navbar extends React.Component {
 	render() {
 		return (
-			
+			<div>
 				<nav id="navbar" className="nav">
 			        <ul className="navbar-menu">
 			            <li className="navbar-item">
@@ -24,6 +24,14 @@ export default class Navbar extends React.Component {
 			            </li>
 			        </ul>
 			    </nav>
+				<div className="burger-nav">
+					<div className="styled-button">
+						<div className="burger"></div>
+						<div className="burger"></div>
+						<div className="burger"></div>
+					</div>
+				</div>
+			</div>
 			    
 		)
 	}
