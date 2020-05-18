@@ -70,21 +70,6 @@ class Projects extends React.Component {
 						</p>
 					</div>
 
-					<Thumbnail
-			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
-			    		image={require("./content/tictactoe.PNG")}
-			    		title="ReactJS Game"
-			    	/>
-					<div className="project-details animated slideInRight slow">
-						<h2>ReactJS Game</h2><br/><br/>
-						<p>React, JavaScript, StyledComponents</p><br/><br/>
-						<h3>Summary</h3>
-						<p className="summary">Built a Tic-Tac-Toe game in React. First project getting familiar with React concepts like state, props, and lifecycle methods -
-						as well as using other libraries in the React ecosystem instead of just relying on JavaScript, HTML, and CSS solutions.
-						Try it out! 
-						</p>
-					</div>
-
 			    	<Thumbnail
 			    		link="https://github.com/brentonjackson/Flashcard-Android-App"
 			    		image={require("./content/flashcard.png")}
@@ -123,6 +108,21 @@ class Projects extends React.Component {
 						<h3>Summary</h3>
 						<p className="summary">Refactored portfolio in React. 
 							I learned how to create React apps from scratch as well as refactor pre-existing HTML sites. Also learned a lot about deployment while doing this.
+						</p>
+					</div>
+
+					<Thumbnail
+			    		link="https://pensive-brahmagupta-d6741d.netlify.com/"
+			    		image={require("./content/tictactoe.PNG")}
+			    		title="ReactJS Game"
+			    	/>
+					<div className="project-details animated slideInRight slow">
+						<h2>ReactJS Game</h2><br/><br/>
+						<p>React, JavaScript, StyledComponents</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">Built a Tic-Tac-Toe game in React. First project getting familiar with React concepts like state, props, and lifecycle methods -
+						as well as using other libraries in the React ecosystem instead of just relying on JavaScript, HTML, and CSS solutions.
+						Try it out! 
 						</p>
 					</div>
 				</div>
