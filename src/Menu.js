@@ -12,7 +12,8 @@ const Menu = ({open}) => {
             <a href="/projects" className="menu">
                 Projects
             </a>
-            <a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer" className="menu">
+            {/* <a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer" className="menu"> */}
+            <a href="/resume">
                 Resume
             </a>
             <a href="/contact" className="menu">
