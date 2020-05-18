@@ -49,28 +49,30 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1200px)  {
 
-    .project-tile:hover {
-       display:inline-block;
-       -webkit-transition-delay: 3s;
-        -moz-transition-delay: 3s;
-         -ms-transition-delay: 3s;
-          -o-transition-delay: 3s;
-             transition-delay: 3s;
-       -webkit-transform: scale(1.1);
-          -moz-transform: scale(1.1);
-           -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-               transform: scale(1.1);
-        -webkit-transition: transform .2s ease;
-           -moz-transition: transform .2s ease;
-            -ms-transition: transform .2s ease;
-             -o-transition: transform .2s ease;
-                transition: transform .2s ease;
-     }
+   .project-tile:hover {
+      display:inline-block;
+      -webkit-transition-delay: 3s;
+      -moz-transition-delay: 3s;
+      -ms-transition-delay: 3s;
+         -o-transition-delay: 3s;
+            transition-delay: 3s;
+      -webkit-transform: scale(1.1);
+         -moz-transform: scale(1.1);
+         -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+      -webkit-transition: transform .2s ease;
+         -moz-transition: transform .2s ease;
+         -ms-transition: transform .2s ease;
+            -o-transition: transform .2s ease;
+               transition: transform .2s ease;
    }
-   
-   
-   .project-title {
-     padding: 1rem;
-     font-size: 2rem;
+   .project-image {
+      height: 380px;
    }
+}
+
+.project-title {
+   padding: 1rem;
+   font-size: 2rem;
+}
