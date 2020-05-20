@@ -53,7 +53,7 @@ class Resume extends React.Component {
                                 <li>React, JavaScript, jQuery, Animate.css, HTML, CSS</li>
                                 <li>  Designed/launched responsive website to showcase projects</li>
                             </ul>
-                        <li className="content-header"><a href="https://github.com/brentonjackson/Flashcard-Android-App" target="_blank" rel="noopener noreferrer">Android App</a></li>
+                        <li className="content-header"><a href="https://github.com/brentonjackson/Flashcard-Android-App" target="_blank" rel="noopener noreferrer">Flashcards Android App</a></li>
                             <ul className="content">
                                 <li>Android Studio, Java, SQL</li>
                                 <li>Developed Android App that creates, edits, saves, and deletes flashcards to and from database</li>
