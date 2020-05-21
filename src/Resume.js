@@ -12,7 +12,7 @@ class Resume extends React.Component {
                         <li>(478)361-3238 | Atlanta, GA</li>
                         <li><a href="http://linkedin.com/in/jacksonbrenton" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                         <li><a href="http://github.com/brentonjackson" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a href="http://driventocode.com">Portfolio</a></li>
+                        <li><a href="http://brentonjackson.me">Portfolio</a></li>
                     </ul>
                     <h3 className="section-header">Skills</h3>
                         <ul className="skills">
@@ -48,7 +48,7 @@ class Resume extends React.Component {
                                 <li>JavaScript, CSS3, HTML</li>
                                 <li>  Developed site to help motivate users and hold themselves accountable while working out</li>
                             </ul>
-                        <li className="content-header"><a href="https://driventocode.com" target="_blank" rel="noopener noreferrer">Personal Portfolio</a></li>
+                        <li className="content-header"><a href="https://brentonjackson.me" target="_blank" rel="noopener noreferrer">Personal Portfolio</a></li>
                             <ul className="content">
                                 <li>React, JavaScript, jQuery, Animate.css, HTML, CSS</li>
                                 <li>  Designed/launched responsive website to showcase projects</li>
