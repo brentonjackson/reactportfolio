@@ -2,11 +2,11 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-[LINK](https://driventocode.com)
+[LINK](https://brentonjackson.me)
 
 ## Background
 
-After building my last [portfolio](https://brentonjackson.github.io/portfolio) site with some CSS libraries and JS, I knew I wanted to do a lot more with it.
+After building my last portfolio site with some CSS libraries and JS, I knew I wanted to do a lot more with it.
 I didn't like the scroll experience with my mouse (turned out it was just a USB connectivity problem, sorry mouse!), so I thought it'd be a great idea to do it in React
 so I could render everything on a single page and then conditionally render the components I wanted.
 
