@@ -2,7 +2,6 @@ import React from "react";
 import ResumeButton from "./ResumeButton.js";
 import "./about.css";
 import headshot from "./content/brenton.png";
-import avatar from "./content/avatar-phone.svg";
 
 class About extends React.Component {
   render() {

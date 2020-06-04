@@ -1,10 +1,23 @@
 /********************************** Contacts section *************************************/
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+.contact-wrapper svg {
+  margin-top: 100px;
+}
+
 .contact {
     padding: 0 2rem;
-    background: var(--primary-color);
+    
     /* background: linear-gradient(var(--secondary-color), var(--blue-gradient)); */
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -13,7 +26,7 @@
   
   .contact-header {
     width: 200px;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -46,10 +59,20 @@
     padding: 5px;
   }
 
+  @media (max-height: 750px) {
+    .contact-wrapper svg {
+      display: none;
+    }
+  }
+
   @media (min-width: 768px) {
+    .contact-wrapper {
+      flex-direction: row;
+    }
+    
     .contact-header {
       width: 400px;
-      margin-top: 200px;
+      /* margin-top: 200px; */
       text-align: left;
     }
 

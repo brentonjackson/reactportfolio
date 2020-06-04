@@ -6,7 +6,7 @@ import About from "./About.js";
 import Projects from "./Projects.js";
 import Resume from "./Resume.js";
 import Contact from "./Contact.js";
-import "./App.css";
+import "./app.css";
 
 class App extends React.Component {
   render() {
