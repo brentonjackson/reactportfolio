@@ -15,7 +15,7 @@ export const StyledMenu = styled.nav`
   border-bottom: 1px solid black;
   transition: transform 0.3s ease-in-out;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   transform: ${({ open }) => open ? 'translateY(4%)' : 'translateY(-100%)'};
   
 

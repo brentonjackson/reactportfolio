@@ -1,15 +1,25 @@
 import React from "react";
 import "./contact.css";
-import {ReactComponent as Avatar} from './content/avatar-phone.svg';
+import {motion} from "framer-motion";
+// import {ReactComponent as Avatar} from './content/avatar-phone.svg';
+import ContactAvatar from "./ContactAvatar";
 
 class Contact extends React.Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <Avatar />
+        <ContactAvatar />
         <div id="contact" className="contact">
           <div className="contact-header">
-            <h2 className="animated slideInDown slow">Give me a shout</h2>
+            <motion.h2 className="animated slideInDown slow" 
+              drag
+              dragConstraints={{
+                top: -50,
+                left: -50,
+                right: 50,
+                bottom: 50,
+              }}
+            >Give me a shout</motion.h2>
             <p className="animated slideInRight slow">
               Email is the best way to reach me.
               <br /> I'm usually in the Atlanta area if you want to meet in

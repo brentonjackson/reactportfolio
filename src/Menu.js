@@ -2,7 +2,7 @@ import React from "react";
 import { bool } from "prop-types";
 import { StyledMenu } from "./Menu.styled";
 // import resume from "./content/Brenton-Jackson-resume.pdf";
-import "./menu.css";
+// import "./menu.css";
 
 const Menu = ({ open }) => {
   return (
