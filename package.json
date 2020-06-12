@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^5.4.0",
     "gh-pages": "^2.0.1"
   }
 }

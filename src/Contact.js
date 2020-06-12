@@ -1,14 +1,13 @@
 import React from "react";
 import "./contact.css";
 import {motion} from "framer-motion";
-// import {ReactComponent as Avatar} from './content/avatar-phone.svg';
-import ContactAvatar from "./ContactAvatar";
+import SvgAvatarPhone from "./Icons/SvgAvatarPhone";
 
 class Contact extends React.Component {
   render() {
     return (
       <div className="contact-wrapper">
-        <ContactAvatar />
+        <SvgAvatarPhone />
         <div id="contact" className="contact">
           <div className="contact-header">
             <motion.h2 className="animated slideInDown slow" 
