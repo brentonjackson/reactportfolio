@@ -10,14 +10,14 @@ class Contact extends React.Component {
         <SvgAvatarPhone />
         <div id="contact" className="contact">
           <div className="contact-header">
-            <motion.h2 className=" slideInDown slow" 
+            <motion.h2 
               initial={{ y: '-100vh'}}
               animate={{ y: 0 }}
               transition={{ duration: 3}}
             >
               Give me a shout
             </motion.h2>
-            <motion.p className=" slideInRight slow"
+            <motion.p
               initial={{ x: '100vw'}}
               animate={{ x: 0 }}
               transition={{ duration: 3, delay: 0.8}}
@@ -27,7 +27,7 @@ class Contact extends React.Component {
               person. Let's grab some coffee!
             </motion.p>
           </div>
-          <motion.ul className="socials  slideInUp slow"
+          <motion.ul className="socials"
             initial={{ y: '100vh'}}
             animate={{ y: 0 }}
             transition={{ duration: 3, delay: 1}}
