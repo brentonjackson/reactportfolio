@@ -1,17 +1,21 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
+
 function SvgComponent(props) {
+  
+  
   return (
     <motion.svg id="Layer_1" data-name="Layer 1" viewBox="0 0 391.1 410.2" {...props}
       width={395} height={500}
       drag="y"
       dragConstraints={{
         top: -50,
-        left: -50,
-        right: 50,
         bottom: 50,
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 4 }}      
     >
       <defs>
         <linearGradient
@@ -176,7 +180,9 @@ function SvgComponent(props) {
       </defs>
       <g clipPath="url(#clip-path)">
         <g id="o">
-          <g id="whole_pic" data-name="whole pic">
+          <motion.g id="whole_pic" data-name="whole pic"
+            whileTap={{scale: 0.9 }}
+          >
             <path
               id="Blob"
               d="M382.7 262.2C338.9 172.7 276.1 47.5 113.3 47.1-52 46.8-.4 214.5 75.1 266.3c1.9 1.3 15.6 13.8 18.1 15.1 91.6 46.8-158 77.4-62.3 136.1s270.7 46.2 321.7 0 49-116.6 30.1-155.3z"
@@ -300,7 +306,9 @@ function SvgComponent(props) {
                 transform="translate(-3.8 -47.1)"
                 fill="url(#linear-gradient-6)"
               />
-              <path
+              <motion.path
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 2, loop: 1, delay: 3}}
                 id="shirt_collar"
                 data-name="shirt collar"
                 d="M103.9 119.8a10 10 0 008 9.6c8 1.8 12.8-4.8 12.8-4.8"
@@ -318,7 +326,10 @@ function SvgComponent(props) {
                 fill="url(#linear-gradient-7)"
               />
             </g>
-            <g id="Head">
+            <motion.g id="Head"
+              animate={{ rotateZ: [0, -10, 0] }}
+              transition={{ duration: 2, loop: 1, delay: 3}}
+            >
               <path
                 id="Back_of_head"
                 data-name="Back of head"
@@ -365,7 +376,7 @@ function SvgComponent(props) {
                 d="M130.9 143.8l1-.4.3-2-3.3.7a1.6 1.6 0 00-1.3 1.2l-1.8 6.9c-4.5.7-15.3 3.7-17 3.3s-1.7-3.2-3-3.1-1.8 1.7-2.5 1.4a10.2 10.2 0 01-2.6-4.2l-.5 5.5c-.1.8 2.2 6.9 2.2 6.9a2.2 2.2 0 001.2 1.1l4.9 1.4 2.9-.5c4-.5 14.6-4.8 15-5.8 2.7-5.8 1.9-11.2 4.5-12.4z"
                 transform="translate(-3.8 -47.1)"
               />
-            </g>
+            </motion.g>
             <path
               id="Left_hand"
               data-name="Left hand"
@@ -380,7 +391,7 @@ function SvgComponent(props) {
               transform="translate(-3.8 -47.1)"
               fill="url(#linear-gradient-14)"
             />
-          </g>
+          </motion.g>
         </g>
       </g>
     </motion.svg>

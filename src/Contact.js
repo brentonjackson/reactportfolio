@@ -10,23 +10,32 @@ class Contact extends React.Component {
         <SvgAvatarPhone />
         <div id="contact" className="contact">
           <div className="contact-header">
-            <motion.h2 className="animated slideInDown slow" 
-              drag
-              dragConstraints={{
-                top: -50,
-                left: -50,
-                right: 50,
-                bottom: 50,
-              }}
-            >Give me a shout</motion.h2>
-            <p className="animated slideInRight slow">
+            <motion.h2 className=" slideInDown slow" 
+              initial={{ y: '-100vh'}}
+              animate={{ y: 0 }}
+              transition={{ duration: 3}}
+            >
+              Give me a shout
+            </motion.h2>
+            <motion.p className=" slideInRight slow"
+              initial={{ x: '100vw'}}
+              animate={{ x: 0 }}
+              transition={{ duration: 3, delay: 0.8}}
+            >
               Email is the best way to reach me.
               <br /> I'm usually in the Atlanta area if you want to meet in
               person. Let's grab some coffee!
-            </p>
+            </motion.p>
           </div>
-          <ul className="socials animated slideInUp slow">
-            <li className="social-link">
+          <motion.ul className="socials  slideInUp slow"
+            initial={{ y: '100vh'}}
+            animate={{ y: 0 }}
+            transition={{ duration: 3, delay: 1}}
+          >
+            <motion.li className="social-link"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8}}
+            >
               <a
                 href="https://www.linkedin.com/in/jacksonbrenton"
                 target="_blank"
@@ -34,8 +43,11 @@ class Contact extends React.Component {
               >
                 <i className="fab fa-linkedin-in social-icon"></i> LinkedIn
               </a>
-            </li>
-            <li className="social-link">
+            </motion.li>
+            <motion.li className="social-link"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8}}
+            >
               <a
                 href="https://github.com/brentonjackson"
                 target="_blank"
@@ -45,8 +57,11 @@ class Contact extends React.Component {
                 <i className="fab fa-github github-icon fa-lg social-icon"></i>{" "}
                 GitHub
               </a>
-            </li>
-            <li className="social-link">
+            </motion.li>
+            <motion.li className="social-link"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8}}
+            >
               <a
                 href="mailto:bjackson71@gatech.edu"
                 target="_blank"
@@ -54,8 +69,8 @@ class Contact extends React.Component {
               >
                 <i className="fas fa-at social-icon"></i> Email
               </a>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </div>
       </div>
       
