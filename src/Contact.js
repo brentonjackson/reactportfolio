@@ -13,14 +13,14 @@ class Contact extends React.Component {
             <motion.h2 
               initial={{ y: '-100vh'}}
               animate={{ y: 0 }}
-              transition={{ duration: 3}}
+              transition={{ duration: 2, type: "spring", stiffness: 75 }}
             >
               Give me a shout
             </motion.h2>
             <motion.p
               initial={{ x: '100vw'}}
               animate={{ x: 0 }}
-              transition={{ duration: 3, delay: 0.8}}
+              transition={{ duration: 2, delay: 0.8, type: "spring", stiffness: 60 }}
             >
               Email is the best way to reach me.
               <br /> I'm usually in the Atlanta area if you want to meet in
@@ -30,7 +30,7 @@ class Contact extends React.Component {
           <motion.ul className="socials"
             initial={{ y: '100vh'}}
             animate={{ y: 0 }}
-            transition={{ duration: 3, delay: 1}}
+            transition={{ duration: 2, delay: 1, type: "spring", stiffness: 60 }}
           >
             <motion.li className="social-link"
               whileHover={{ scale: 1.2 }}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import Thumbnail from './Thumbnail.js';
 import './projects.css'
 
@@ -7,15 +8,25 @@ class Projects extends React.Component {
 	render() {  
 		return (
 		    <div className = "projects">
-		    	<h2 className="project-header animated slideInDown slow">Recent Projects</h2>
+		    	<motion.h2 className="project-header"
+					initial={{ y: '-100vh' }}
+					animate={{ y: 0 }}
+					transition={{ type: "spring", stiffness:40, damping: 10 }}
+				>
+					Recent Projects</motion.h2>
 		    	
-		    	<div className="project-container">
+				<motion.div 
+					initial={{ y: '100vh' }}
+					animate={{ y: 0 }}
+					transition={{ type: "spring", stiffness:40, damping: 10 }}
+					className="project-container">
 			    	<Thumbnail
 			    		link="https://compassionate-wescoff-fd50aa.netlify.app/"
 			    		image={require("./content/wip.png")}
 			    		title="Workout App"
 			    	/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Workout App</h2><br/><br/>
 						<p>React, Node, MongoDB, Express</p><br/><br/>
 						<h3>Summary</h3>
@@ -29,7 +40,8 @@ class Projects extends React.Component {
 			    		image={require("./content/fitnessgram.png")}
 			    		title="FitnessGram"
 			    	/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Fitness Motivation Site</h2><br/><br/>
 						<p>JavaScript, HTML, CSS</p><br/><br/>
 						<h3>Summary</h3>
@@ -44,7 +56,8 @@ class Projects extends React.Component {
 			    		image={require("./content/vower.png")}
 			    		title="Landing Page Redesign"
 					/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Landing Page Redesign</h2><br/><br/>
 						<p>HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
 						<h3>Summary</h3>
@@ -60,7 +73,8 @@ class Projects extends React.Component {
 			    		image={require("./content/mj.png")}
 			    		title="Dynamic Bio Page"
 					/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Dynamic Bio Page</h2><br/><br/>
 						<p>HTML, CSS, JavaScript</p><br/><br/>
 						<h3>Summary</h3>
@@ -75,7 +89,8 @@ class Projects extends React.Component {
 			    		image={require("./content/flashcard.png")}
 			    		title="Mobile App Development"
 			    	/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Mobile App Development</h2><br/><br/>
 						<p>Java, Android Studio, SQL</p><br/><br/>
 						<h3>Summary</h3>
@@ -88,7 +103,8 @@ class Projects extends React.Component {
 			    		image={require("./content/clarion.png")}
 			    		title="Mobile App Design"
 			    	/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Mobile App Design</h2><br/><br/>
 						<p>Designed/ prototyped with Photoshop, Adobe XD</p><br/><br/>
 						<h3>Summary</h3>
@@ -102,7 +118,8 @@ class Projects extends React.Component {
 			    		image={require("./content/react-portfolio.png")}
 			    		title="Portfolio Website"
 					/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>Portfolio Website</h2><br/><br/>
 						<p>React, HTML, CSS, JavaScript, jQuery, Animate.css</p><br /><br/>
 						<h3>Summary</h3>
@@ -116,7 +133,8 @@ class Projects extends React.Component {
 			    		image={require("./content/tictactoe.PNG")}
 			    		title="ReactJS Game"
 			    	/>
-					<div className="project-details animated slideInRight slow">
+					<div 
+						className="project-details slideInRight slow">
 						<h2>ReactJS Game</h2><br/><br/>
 						<p>React, JavaScript, StyledComponents</p><br/><br/>
 						<h3>Summary</h3>
@@ -125,7 +143,7 @@ class Projects extends React.Component {
 						Try it out! 
 						</p>
 					</div>
-				</div>
+				</motion.div>
 		    </div>
 	  	)
 	}
