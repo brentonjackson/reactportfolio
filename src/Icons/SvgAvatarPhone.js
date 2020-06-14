@@ -1,6 +1,35 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
+const svgVariants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 4
+    }
+  }
+}
+
+const headVariants = {
+  visible: {
+    rotateZ: [0, -10, 0],
+    transition: {
+      duration: 2, loop: Infinity, repeatDelay: 3, delay: 2, type: "tween", ease: "easeOut"
+    }
+  }
+}
+
+const collarVariants = {
+  visible: {
+    x: [null, 5, 0],
+    transition: {
+      duration: 2, loop: Infinity, repeatDelay: 3, delay: 2, type: "tween", ease: "easeOut"
+    }
+  }
+}
 
 function SvgComponent(props) {
   
@@ -13,9 +42,9 @@ function SvgComponent(props) {
         top: -50,
         bottom: 50,
       }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 4 }}      
+      variants={svgVariants}
+      initial="hidden"
+      animate="visible"
     >
       <defs>
         <linearGradient
@@ -307,8 +336,7 @@ function SvgComponent(props) {
                 fill="url(#linear-gradient-6)"
               />
               <motion.path
-                animate={{ x: [null, 5, 0] }}
-                transition={{ duration: 2, loop: Infinity, repeatDelay: 3, delay: 2}}
+                variants={collarVariants}
                 id="shirt_collar"
                 data-name="shirt collar"
                 d="M103.9 119.8a10 10 0 008 9.6c8 1.8 12.8-4.8 12.8-4.8"
@@ -327,8 +355,7 @@ function SvgComponent(props) {
               />
             </g>
             <motion.g id="Head"
-              animate={{ rotateZ: [0, -10, 0] }}
-              transition={{ duration: 2, loop: Infinity, repeatDelay: 3, delay: 2}}
+              variants={headVariants}
             >
               <path
                 id="Back_of_head"

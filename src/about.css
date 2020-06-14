@@ -7,13 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-color);
 }
 
 #about {
     /* background: var(--primary-color); */
     /* background: radial-gradient(var(--secondary-color), var(--blue-gradient)); */
-    color: var(--secondary-color);
     order: 2;
     display: flex;
     flex-direction: column;
@@ -24,9 +22,6 @@
     padding-top: 30px;
   }
   
-  #about h1, #about p {
-    color: var(--main-white);
-  }
   #about p {
     font-style: italic;
     font-size: 2.5rem;

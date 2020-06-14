@@ -28,6 +28,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
 /* Customizing scrollbar */
 body::-webkit-scrollbar {
   width: 8px;

@@ -9,12 +9,11 @@
   text-align: center;
   /* height: 100vh; */
   /* color: var(--main-white); */
-  color: var(--accent-color);
 }
   
 .project-header {
   margin: 1rem auto 6rem auto; /* auto left and right */
-  border-bottom: .2rem solid var(--accent-color);
+  border-bottom: .2rem solid var(--main-white);
   max-width: 650px;
 }
 

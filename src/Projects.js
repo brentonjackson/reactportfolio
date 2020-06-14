@@ -3,22 +3,45 @@ import { motion } from "framer-motion"
 import Thumbnail from './Thumbnail.js';
 import './projects.css'
 
- 
+const headerVariants = {
+	hidden: {
+		x: '150vw'
+	},
+	visible: {
+		x: 0,
+		transition: {
+		type: "spring", stiffness: 80, duration: 5, delay: 0.58
+		}
+	}
+}
+
+const subheadVariants = {
+	hidden: {
+		x: '150vw'
+	},
+	visible: {
+		x: 0,
+		transition: {
+		type: "spring", stiffness: 80, duration: 5, delay: 0.5
+		}
+	}
+}
+
 class Projects extends React.Component {
 	render() {  
 		return (
 		    <div className = "projects">
 		    	<motion.h2 className="project-header"
-					initial={{ y: '-100vh' }}
-					animate={{ y: 0 }}
-					transition={{ type: "spring", stiffness:40, damping: 10 }}
+					variants={headerVariants}
+					initial="hidden"
+					animate="visible"
 				>
 					Recent Projects</motion.h2>
 		    	
 				<motion.div 
-					initial={{ y: '100vh' }}
-					animate={{ y: 0 }}
-					transition={{ type: "spring", stiffness:40, damping: 10 }}
+					variants={subheadVariants}
+					initial="hidden"
+            		animate="visible"
 					className="project-container">
 			    	<Thumbnail
 			    		link="https://compassionate-wescoff-fd50aa.netlify.app/"
