@@ -14,7 +14,7 @@ class ResumeButton extends React.Component {
 				whileTap={{ scale: 0.8}}
 			>
 				<motion.button className="resume_btn"
-					whileHover={{ borderColor: '#27726D', color: '#27726D', scale: 1.3 }}
+					whileHover={{ scale: 1.3, boxShadow:"0px 0px 8px rgba(255,255,255,1)" }}
 					transition={{ duration: .5 }}
 				>
 		                <i id="download-icon" className="fa fa-download" aria-hidden="true"></i>

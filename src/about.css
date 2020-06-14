@@ -70,7 +70,7 @@
       padding: 10px;
       font-family: inherit;
       /* -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2); */
-              box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2); */
       background-color: initial;
       /* color: var(--secondary-color); */
       color: var(--main-white);

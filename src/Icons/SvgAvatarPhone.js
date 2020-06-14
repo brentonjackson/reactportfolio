@@ -308,7 +308,7 @@ function SvgComponent(props) {
               />
               <motion.path
                 animate={{ x: [null, 5, 0] }}
-                transition={{ duration: 2, loop: Infinity, repeatDelay: 3}}
+                transition={{ duration: 2, loop: Infinity, repeatDelay: 3, delay: 2}}
                 id="shirt_collar"
                 data-name="shirt collar"
                 d="M103.9 119.8a10 10 0 008 9.6c8 1.8 12.8-4.8 12.8-4.8"
@@ -328,7 +328,7 @@ function SvgComponent(props) {
             </g>
             <motion.g id="Head"
               animate={{ rotateZ: [0, -10, 0] }}
-              transition={{ duration: 2, loop: Infinity, repeatDelay: 3}}
+              transition={{ duration: 2, loop: Infinity, repeatDelay: 3, delay: 2}}
             >
               <path
                 id="Back_of_head"
