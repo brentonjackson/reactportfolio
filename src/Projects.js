@@ -3,6 +3,14 @@ import { motion } from "framer-motion"
 import Thumbnail from './Thumbnail.js';
 import './projects.css'
 
+const containerVariants = {
+	exit: {
+	  x: '-100vw',
+	  opacity: 0,
+	  transition: { ease: "easeInOut", duration: 3 }
+	}
+  }
+
 const headerVariants = {
 	hidden: {
 		x: '150vw'
@@ -30,7 +38,7 @@ const subheadVariants = {
 class Projects extends React.Component {
 	render() {  
 		return (
-		    <div className = "projects">
+		    <motion.div className = "projects" variants={containerVariants} exit="exit">
 		    	<motion.h2 className="project-header"
 					variants={headerVariants}
 					initial="hidden"
@@ -167,7 +175,7 @@ class Projects extends React.Component {
 						</p>
 					</div>
 				</motion.div>
-		    </div>
+		    </motion.div>
 	  	)
 	}
 }

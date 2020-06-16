@@ -8,9 +8,10 @@ const svgVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 4
+      type: "tween", ease: "easeIn", duration: 2.5
     }
-  }
+  },
+  tap: { scale: 0.9 }
 }
 
 const headVariants = {
@@ -31,6 +32,10 @@ const collarVariants = {
   }
 }
 
+function onPan(event, info) {
+  console.log(info.point.x, info.point.y)
+}
+
 function SvgComponent(props) {
   
   
@@ -38,13 +43,12 @@ function SvgComponent(props) {
     <motion.svg id="Layer_1" data-name="Layer 1" viewBox="0 0 391.1 410.2" {...props}
       width={395} height={500}
       drag="y"
-      dragConstraints={{
-        top: -50,
-        bottom: 50,
-      }}
+      dragConstraints={{  top: -50, bottom: 50 }}
+      onPan={onPan}
       variants={svgVariants}
       initial="hidden"
       animate="visible"
+      whileTap="tap"
     >
       <defs>
         <linearGradient
@@ -209,9 +213,7 @@ function SvgComponent(props) {
       </defs>
       <g clipPath="url(#clip-path)">
         <g id="o">
-          <motion.g id="whole_pic" data-name="whole pic"
-            whileTap={{scale: 0.9 }}
-          >
+          <g id="whole_pic" data-name="whole pic">
             <path
               id="Blob"
               d="M382.7 262.2C338.9 172.7 276.1 47.5 113.3 47.1-52 46.8-.4 214.5 75.1 266.3c1.9 1.3 15.6 13.8 18.1 15.1 91.6 46.8-158 77.4-62.3 136.1s270.7 46.2 321.7 0 49-116.6 30.1-155.3z"
@@ -354,9 +356,7 @@ function SvgComponent(props) {
                 fill="url(#linear-gradient-7)"
               />
             </g>
-            <motion.g id="Head"
-              variants={headVariants}
-            >
+            <motion.g id="Head" variants={headVariants}>
               <path
                 id="Back_of_head"
                 data-name="Back of head"
@@ -418,7 +418,7 @@ function SvgComponent(props) {
               transform="translate(-3.8 -47.1)"
               fill="url(#linear-gradient-14)"
             />
-          </motion.g>
+          </g>
         </g>
       </g>
     </motion.svg>

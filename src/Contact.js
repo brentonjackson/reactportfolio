@@ -3,24 +3,73 @@ import "./contact.css";
 import {motion} from "framer-motion";
 import SvgAvatarPhone from "./Icons/SvgAvatarPhone";
 
+const containerVariants = {
+  exit: {
+    x: '-100vw',
+    transition: { ease: "easeInOut", duration: 3 }
+  }
+}
+
+const contactHeaderVariants = {
+  hidden: {
+    y: '-100vh'
+  },
+  visible: {
+    y:0,
+    transition: {
+      duration: 2, type: "spring", stiffness: 75
+    }
+  }
+}
+
+const paragraphVariants = {
+  hidden: {
+    x: '100vw'
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 2, delay: .8, type: "spring", stiffness: 60
+    }
+  }
+}
+
+const socialVariants = {
+  hidden: {
+    y: '100vh'
+  },
+  visible: {
+    y:0,
+    transition: {
+      duration: 2, delay: 1, type: "spring", stiffness: 60
+    }
+  },
+}
+
+const linkVariants = {
+  hover: { scale: 1.2 },
+  tap: { scale: 0.8 }
+}
+
+
 class Contact extends React.Component {
   render() {
     return (
-      <div className="contact-wrapper">
+      <motion.div className="contact-wrapper" variants={containerVariants} exit="exit">
         <SvgAvatarPhone />
         <div id="contact" className="contact">
           <div className="contact-header">
             <motion.h2 
-              initial={{ y: '-100vh'}}
-              animate={{ y: 0 }}
-              transition={{ duration: 2, type: "spring", stiffness: 75 }}
+              variants={contactHeaderVariants}
+              initial="hidden"
+              animate="visible"
             >
               Give me a shout
             </motion.h2>
             <motion.p
-              initial={{ x: '100vw'}}
-              animate={{ x: 0 }}
-              transition={{ duration: 2, delay: 0.8, type: "spring", stiffness: 60 }}
+              variants={paragraphVariants}
+              initial="hidden"
+              animate="visible"
             >
               Email is the best way to reach me.
               <br /> I'm usually in the Atlanta area if you want to meet in
@@ -28,11 +77,12 @@ class Contact extends React.Component {
             </motion.p>
           </div>
           <motion.ul className="socials"
-            initial={{ y: '100vh'}}
-            animate={{ y: 0 }}
-            transition={{ duration: 2, delay: 1, type: "spring", stiffness: 60 }}
+            variants={socialVariants}
+            initial="hidden"
+            animate="visible"
           >
             <motion.li className="social-link"
+              variants={linkVariants}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8}}
             >
@@ -45,8 +95,9 @@ class Contact extends React.Component {
               </a>
             </motion.li>
             <motion.li className="social-link"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8}}
+              variants={linkVariants}
+              whileHover="hover"
+              whileTap="tap"
             >
               <a
                 href="https://github.com/brentonjackson"
@@ -59,8 +110,9 @@ class Contact extends React.Component {
               </a>
             </motion.li>
             <motion.li className="social-link"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8}}
+              variants={linkVariants}
+              whileHover="hover"
+              whileTap="tap"
             >
               <a
                 href="mailto:bjackson71@gatech.edu"
@@ -72,7 +124,7 @@ class Contact extends React.Component {
             </motion.li>
           </motion.ul>
         </div>
-      </div>
+      </motion.div>
       
     );
   }

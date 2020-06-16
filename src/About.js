@@ -4,6 +4,13 @@ import ResumeButton from "./ResumeButton.js";
 import "./about.css";
 import headshot from "./content/brenton.png";
 
+const containerVariants = {
+  exit: {
+    x: '-100vw',
+    transition: { type: "tween", ease: "easeInOut", duration: 3 }
+  }
+}
+
 const headerVariants = {
   hidden: {
     x: '-150vw'
@@ -43,7 +50,7 @@ const pictureVariants = {
 class About extends React.Component {
   render() {
     return (
-      <div className="about-container">
+      <motion.div className="about-container" variants={containerVariants} exit="exit">
         <section id="about">
           <motion.h1
             variants={headerVariants}
@@ -68,7 +75,7 @@ class About extends React.Component {
         >
           <img alt="headshot" src={headshot}></img>
         </motion.section>
-      </div>
+      </motion.div>
     );
   }
 }

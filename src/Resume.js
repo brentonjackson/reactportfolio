@@ -1,10 +1,18 @@
 import React from "react";
+import {motion} from "framer-motion"
 import './resume.css';
- 
+
+const containerVariants = {
+    exit: {
+      x: '-100vw',
+      transition: { ease: "easeInOut" }
+    }
+  }
+
 class Resume extends React.Component {
 	render() {
 		return (
-		    <div id="resume-container">
+		    <motion.div id="resume-container" variants={containerVariants} exit="exit">
                 <div className="stuff">
                     <h2 className="name">Brenton Jackson</h2>
                     <p className="subtitle">Software Developer</p>
@@ -73,7 +81,7 @@ class Resume extends React.Component {
                             </ul>
                     </ul>
                 </div>
-    		</div>
+    		</motion.div>
 	  	)
 	}
 }

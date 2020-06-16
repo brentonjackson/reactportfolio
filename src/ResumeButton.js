@@ -11,6 +11,9 @@ const pictureVariants = {
 		transition: {
 		duration: 3, delay: 3
 		}
+	},
+	tap: {
+		scale: 0.8
 	}
 }
 
@@ -19,6 +22,9 @@ const buttonVariants = {
 		transition: {
 			type: 'spring', stiffness: 250, duration: .5
 		}
+	},
+	hover: {
+		scale: 1.3, boxShadow:"0px 0px 8px rgba(255,255,255,1)"
 	}
 }
 
@@ -29,11 +35,11 @@ class ResumeButton extends React.Component {
 				variants={pictureVariants}	
 				initial="hidden"
             	animate="visible"
-				whileTap={{ scale: 0.8}}
+				whileTap="tap"
 			>
 				<motion.button className="resume_btn"
 					variants={buttonVariants}
-					whileHover={{ scale: 1.3, boxShadow:"0px 0px 8px rgba(255,255,255,1)" }}
+					whileHover="hover"
 				>
 		                <i id="download-icon" className="fa fa-download" aria-hidden="true"></i>
 		                Resume

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import About from "./About.js";
@@ -7,24 +7,28 @@ import Projects from "./Projects.js";
 import Resume from "./Resume.js";
 import Contact from "./Contact.js";
 import "./app.css";
+import { AnimatePresence } from "framer-motion"
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div id="container">
-          <Navbar />
-          <Switch>
+
+
+function App() {
+  const location = useLocation();
+
+  return (
+      <>
+        <Navbar />
+        <AnimatePresence exitBeforeEnter initial={false}>
+          <Switch location={location} >
+            <Route path="/projects" component={Projects} exact />
+            <Route path="/resume" component={Resume} exact />
+            <Route path="/contact" component={Contact} exact />
             <Route path="/" component={About} exact />
-            <Route path="/projects" component={Projects} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/contact" component={Contact} />
           </Switch>
-          <Footer />
-        </div>
-      </Router>
-    );
-  }
+        </AnimatePresence>
+        
+        <Footer />
+      </>
+  );
 }
 
 export default App;
