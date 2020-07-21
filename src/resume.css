@@ -63,6 +63,15 @@
     list-style-type: disc;
 }
 
+.experience a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.experience .content-header {
+    font-weight: bold;
+}
+
 @media (min-height: 640px) {
 
 }
@@ -99,6 +108,8 @@
     .content-header {
         font-size: 12pt;
     }
+
+    
 } 
 
 

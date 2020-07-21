@@ -24,9 +24,9 @@ class Resume extends React.Component {
                     </ul>
                     <h3 className="section-header">Skills</h3>
                         <ul className="skills">
-                            <li>Languages: <strong>JavaScript</strong>, Java, MATLAB, C++</li>
-                            <li>Technologies: <strong>React, MongoDB, Express, Node, HTML5, CSS3, jQuery, Bootstrap, git</strong></li>
-                            <li>Design: Research, Wireframing, Digital mockups</li>
+                            <li>Languages: <strong>JavaScript, Java, MATLAB, C++</strong></li>
+                            <li>Technologies: <strong>React, MongoDB, Express, Node, HTML5, CSS3, jQuery, Bootstrap, git, WordPress, SQL</strong></li>
+                            <li>Design: <strong>Research, Wireframing, Digital mockups</strong></li>
                         </ul>
                     <h3 className="section-header">Education</h3>
                         <ul className="education">
@@ -34,15 +34,37 @@ class Resume extends React.Component {
                                 <ul className="content">
                                     <li>Extensive Coursework in Computer Engineering and Industrial Design</li>
                                 </ul>
-                            <li className="content-header">Big Nerd Ranch, Full Stack and React - 2020</li>
-                                <ul className="content">
-                                    <li>Learned to build responsive full-stack web applications with React, CSS3, and Node.js</li>
-                                </ul>
                             <li className="content-header">Codepath, Mobile App Design - 2020</li>
                                 <ul className="content">
                                     <li>3-month program learning Android Development in Java using Android Studio</li>
                                 </ul>
+                            <li className="content-header">Georgia College and State University, Physics/ Engineering Dual-Degree</li>
+                                <ul className="content">
+                                    <li>Physics TA, Officer of Physics/Astronomy Club</li>
+                                </ul>
                         </ul>
+                    
+                    <h3 className="section-header">Relevant Experience</h3>
+                    <ul className="experience">
+                        <li className="content-header">Freelance Web Developer</li>
+                            <ul className="content">
+                                <li>Independently developed a website for client's lash business that increased client's sales by 45% - <a href="https://savagelashesatl.com">Link</a></li>
+                                <li>Developed a website for small business to allow teacher to transition to independent home schooling and tutoring online</li>
+                            </ul>
+                        <li className="content-header">Georgia Tech Design Bloc, User Researcher - 2019</li>
+                            <ul className="content">
+                                <li>Researched MARTA bus-stops to gather needs and pain-points to improve rider experience</li>
+                                <li>Communicated observations, needs, and potential solutions to stakeholders</li>
+                            </ul>
+                        <li className="content-header">Georgia College, MATLAB Programmer - 2014-2016</li>
+                            <ul className="content">
+                                <li>Developed 3 sets of data catalogs in MATLAB to analyze and statistically compare with observed astronomy data</li>
+                                <li>Won two research grant proposals and presented at APS Physics Conferences with team</li>
+                            </ul>
+                        
+
+                    </ul>
+                    
                     <h3 className="section-header">Recent Projects</h3>
                     <ul className="recent-projects">
                         <li className="content-header"><a href="https://github.com/brentonjackson/mern-workout-app" target="_blank" rel="noopener noreferrer">MERN Workout Tracker</a></li>
@@ -67,19 +89,7 @@ class Resume extends React.Component {
                                 <li>Developed Android App that creates, edits, saves, and deletes flashcards to and from database</li>
                             </ul>
                     </ul>
-                    <h3 className="section-header">Relevant Experience</h3>
-                    <ul className="experience">
-                        <li className="content-header">Georgia Tech Design Bloc, User Researcher - 2019</li>
-                            <ul className="content">
-                                <li>Researched MARTA bus-stops to gather needs and pain-points to improve rider experience</li>
-                                <li>Communicated observations, needs, and potential solutions to stakeholders</li>
-                            </ul>
-                        <li className="content-header">Georgia College, MATLAB Programmer - 2014-2016</li>
-                            <ul className="content">
-                                <li>Developed 3 sets of data catalogs in MATLAB to analyze and statistically compare with observed astronomy data</li>
-                                <li>Won two research grant proposals and presented at APS Physics Conferences with team</li>
-                            </ul>
-                    </ul>
+                    
                 </div>
     		</motion.div>
 	  	)
