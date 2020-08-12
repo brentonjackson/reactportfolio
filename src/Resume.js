@@ -49,7 +49,7 @@ class Resume extends React.Component {
                         <li className="content-header">Freelance Web Developer</li>
                             <ul className="content">
                                 <li>Independently developed a website for client's lash business that increased client's sales by 45% - <a href="https://savagelashesatl.com">Link</a></li>
-                                <li>Developed a website for small business to allow teacher to transition to independent home schooling and tutoring online</li>
+                                <li>Developed a website for small business to allow teacher to transition to independent home schooling and tutoring online - <a href="https://hope2learn.com">Link</a></li>
                             </ul>
                         <li className="content-header">Georgia Tech Design Bloc, User Researcher - 2019</li>
                             <ul className="content">
