@@ -1,7 +1,7 @@
-import React, {Suspense, lazy} from "react";
-import { Route, Switch, useLocation } from "react-router-dom";
-import "./app.css";
-import { AnimatePresence } from "framer-motion"
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
+// import { AnimatePresence } from "framer-motion"
 
 // const Navbar = lazy(() => import('./Navbar'));
 // const Footer = lazy(() => import('./Footer'));
@@ -10,7 +10,6 @@ import { AnimatePresence } from "framer-motion"
 // const Resume = lazy(() => import('./Resume'));
 // const Contact = lazy(() => import('./Contact'));
 
-
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import About from "./About.js";
@@ -18,28 +17,25 @@ import Projects from "./Projects.js";
 import Resume from "./Resume.js";
 import Contact from "./Contact.js";
 
-
-
-
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
-      <>
-        <Navbar />
-        <AnimatePresence exitBeforeEnter initial={false}>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Switch location={location}>
-              <Route path="/projects" component={Projects} exact />
-              <Route path="/resume" component={Resume} exact />
-              <Route path="/contact" component={Contact} exact />
-              <Route path="/" component={About} exact />
-            </Switch>
-          </Suspense>
-        </AnimatePresence>
-        
-        <Footer />
-      </>
+    <>
+      <Navbar />
+      {/* <AnimatePresence exitBeforeEnter initial={false}> */}
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      <Switch>
+        <Route path="/projects" component={Projects} exact />
+        <Route path="/resume" component={Resume} exact />
+        <Route path="/contact" component={Contact} exact />
+        <Route path="/" component={About} exact />
+      </Switch>
+      {/* </Suspense> */}
+      {/* </AnimatePresence> */}
+
+      <Footer />
+    </>
   );
 }
 
