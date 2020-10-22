@@ -82,6 +82,38 @@ class Projects extends React.Component {
 						</p>
 					</div>
 
+					<Thumbnail
+			    		link="https://savagelashesatl.com"
+			    		image={require("./content/fitnessgram.png")}
+			    		title="FitnessGram"
+			    	/>
+					<div 
+						className="project-details slideInRight slow">
+						<h2>Freelance: Lash Site</h2><br/><br/>
+						<p>JavaScript, HTML, CSS</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">This client needed a website for her lash business. I designed and built the site from scratch, and since most of her following and business
+						is on Instagram, I implemented an Instagram widget that displays her posts as a photo gallery. For payments, she set up a Square account and I linked
+						everything there. That way, she could download the Square app and keep track of her appointments and payments.
+						</p>
+					</div>
+
+					<Thumbnail
+			    		link="https://hope2learn.com"
+			    		image={require("./content/fitnessgram.png")}
+			    		title="FitnessGram"
+			    	/>
+					<div 
+						className="project-details slideInRight slow">
+						<h2>Freelance: Homeschool / Tutoring Site</h2><br/><br/>
+						<p>WordPress, CSS</p><br/><br/>
+						<h3>Summary</h3>
+						<p className="summary">This client wanted a website to start her teaching and tutoring business. I used WordPress to design the site and implemented Square for payments. WordPress plugins
+						that made this easier was WooCommerce and Essential Addons (which is very well designed and makes me eager to use WP again so I can use it!) We opted to go
+						with Square instead of a WP plugin for payments because a Square account is free for single users/businesses. I'll have to explore other alternatives the next time I'm using WP.
+						</p>
+					</div>
+
 					{/* <Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
 			    		image={require("./content/vower.png")}
