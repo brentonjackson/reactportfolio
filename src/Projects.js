@@ -67,7 +67,7 @@ class Projects extends React.Component {
 					</div>
 
 			    	<Thumbnail
-			    		link="https://github.com/brentonjackson/fitnessgram/"
+			    		link="https://musing-mclean-fefe4c.netlify.app/"
 			    		image={require("./content/fitnessgram.png")}
 			    		title="FitnessGram"
 			    	/>
@@ -82,7 +82,7 @@ class Projects extends React.Component {
 						</p>
 					</div>
 
-					<Thumbnail
+					{/* <Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
 			    		image={require("./content/vower.png")}
 			    		title="Landing Page Redesign"
@@ -97,10 +97,10 @@ class Projects extends React.Component {
 							and reduced distraction of the user by being minimal in my design approach. <br/>
 							Presenting to an actual client made me cognizant about the
 							presentation of my work and improved my mockup skills. My client loved the end result!</p>
-					</div>
+					</div> */}
 				
 					<Thumbnail
-			    		link="https://brentonjackson.github.io/dynamic-bio"
+			    		link="https://focused-mirzakhani-648ad8.netlify.app/"
 			    		image={require("./content/mj.png")}
 			    		title="Dynamic Bio Page"
 					/>
@@ -145,7 +145,7 @@ class Projects extends React.Component {
 					</div>
 
 					<Thumbnail
-			    		link="https://driventocode.com"
+			    		link="https://brentonjackson.me"
 			    		image={require("./content/react-portfolio.png")}
 			    		title="Portfolio Website"
 					/>
