@@ -84,7 +84,7 @@ class Projects extends React.Component {
 
 					<Thumbnail
 			    		link="https://savagelashesatl.com"
-			    		image={require("./content/wip.png")}
+			    		image={require("./content/savagelashesatl.png")}
 			    		title="SavageLashesATL"
 			    	/>
 					<div 
@@ -100,7 +100,7 @@ class Projects extends React.Component {
 
 					<Thumbnail
 			    		link="https://hope2learn.com"
-			    		image={require("./content/wip.png")}
+			    		image={require("./content/hope2learn.png")}
 			    		title="Hope2Learn"
 			    	/>
 					<div 
