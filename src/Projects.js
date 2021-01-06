@@ -52,17 +52,17 @@ class Projects extends React.Component {
             		animate="visible"
 					className="project-container">
 			    	<Thumbnail
-			    		link="https://compassionate-wescoff-fd50aa.netlify.app/"
+			    		link="https://flamboyant-golick-e73a92.netlify.app/"
 			    		image={require("./content/wip.png")}
 			    		title="Workout App"
 			    	/>
 					<div 
 						className="project-details slideInRight slow">
 						<h2>Workout App</h2><br/><br/>
-						<p>React, Node, MongoDB, Express</p><br/><br/>
+						<p>React (Class based), Node, MongoDB, Express</p><br/><br/>
 						<h3>Summary</h3>
-						<p className="summary">Full-stack app that tracks your workouts. Still a WIP (deploying) but works locally. Hub for keeping workouts
-						centralized for all of you that currently use a notepad (me) or your phone notes app (also me).
+						<p className="summary">Full-stack app that tracks your workouts. Hub for keeping workouts
+						centralized for all of you that currently use a notepad (me) or your phone notes app (also me). Newer version in progress. Deployed on Netlify and Heroku.
 						</p>
 					</div>
 
