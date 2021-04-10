@@ -64,7 +64,7 @@ class About extends React.Component {
             initial="hidden"
             animate="visible"
           >
-            designer / front end developer
+            front end developer
           </motion.p>
           <ResumeButton />
         </section>
