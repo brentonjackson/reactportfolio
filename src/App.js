@@ -16,6 +16,7 @@ import About from "./About.js";
 import Projects from "./Projects.js";
 import Resume from "./Resume.js";
 import Contact from "./Contact.js";
+import Posts from "./Posts";
 
 function App() {
   // const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
         <Route path="/projects" component={Projects} exact />
         <Route path="/resume" component={Resume} exact />
         <Route path="/contact" component={Contact} exact />
+        <Route path="/blog" component={Posts} exact />
         <Route path="/" component={About} exact />
       </Switch>
       {/* </Suspense> */}
