@@ -1,7 +1,7 @@
 import React from "react";
 import { bool } from "prop-types";
 import { StyledMenu } from "./Menu.styled";
-// import resume from "./content/Brenton-Jackson-resume.pdf";
+import resume from "./content/Brenton-Jackson-resume.pdf";
 // import "./menu.css";
 
 const Menu = ({ open }) => {
@@ -14,7 +14,9 @@ const Menu = ({ open }) => {
         Projects
       </a>
       {/* <a href={resume} id="resume_link" target="_blank" rel="noopener noreferrer" className="menu"> */}
-      <a href="/resume">Resume</a>
+      <a href={resume} target="_blank" rel="noopener noreferrer">
+        Resume
+      </a>
       <a href="/contact" className="menu">
         Contact
       </a>

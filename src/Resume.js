@@ -13,7 +13,7 @@ const containerVariants = {
 class Resume extends React.Component {
   render() {
     return (
-      <a href={resume}></a>
+      <a href={resume} target="_blank" rel="noopener noreferrer"></a>
 
       // <motion.div
       //   id="resume-container"

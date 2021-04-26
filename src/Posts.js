@@ -37,7 +37,7 @@ class Posts extends Component {
   constructor() {
     super();
     let posts = fetch(
-      'https://driventocode.com/graphql?query={category(id: "dGVybTo2"){posts{nodes{title, date, status}}}}'
+      'https://driventocode.com/graphql?query={category(id: "dGVybTo2"){posts{nodes{title, date, status, link, featuredImage{node{link}}, content}}}}'
     )
       .then((res) => res.json())
       .then((res) => {
@@ -45,6 +45,9 @@ class Posts extends Component {
         return res.data.category.posts.nodes;
       });
     this.state = { posts: posts };
+    this.span = <span>whatever your string</span>;
+    this.dynamicString = "Hehe";
+    this.dynamicStringSpan = <span>{`${this.dynamicString}`}</span>;
   }
 
   componentDidMount() {
@@ -53,14 +56,13 @@ class Posts extends Component {
 
   async _loadPosts() {
     await fetch(
-      'https://driventocode.com/graphql?query={category(id: "dGVybTo2"){posts{nodes{title, date, status, link, featuredImage{node{link}}}}}}'
+      'https://driventocode.com/graphql?query={category(id: "dGVybTo2"){posts{nodes{title, date, status, link, content, featuredImage{node{link}}}}}}'
     )
       .then((res) => res.json())
       .then((res) => {
         this.setState({ posts: res.data.category.posts.nodes });
       });
   }
-
   render() {
     return (
       <div className="projects">
@@ -76,6 +78,8 @@ class Posts extends Component {
                     : post.featuredImage.node.link
                 }
               />
+              {console.log(post.content.split(/<\w*>|<\/\w*>/g))}
+              {<span>{`${post.content}`}</span>}
             </div>
           ))
         ) : (
