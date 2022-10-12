@@ -61,6 +61,70 @@ class Projects extends React.Component {
           className="project-container"
         >
           <Thumbnail
+            link="https://github.com/brentonjackson/fruit-price-adjustor"
+            image={
+              "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/877/026/datas/original.PNG"
+            }
+            title="Fruit Price Adjustor"
+          />
+          <div className="project-details slideInRight slow">
+            <h2>Fruit Price Adjustor</h2>
+            <br />
+            <br />
+            <p>React, Node, Express, TensorFlow, ZeroMQ, Raspberry Pi</p>
+            <br />
+            <br />
+            <h3>Summary</h3>
+            <p className="summary">
+              Fruit-Price-Adjustor is an IOT app that monitors fruit in stores
+              and adjusts the price of the fruit real-time based on its
+              ripeness. This is an effort to reduce the amount of food waste as
+              well as maximize profits. It is implemented with a camera and
+              machine learning, paired with a full-stack web app and sms
+              messaging.
+            </p>
+          </div>
+          <Thumbnail
+            link="https://github.com/brentonjackson/wall-s"
+            image={require("./content/robotech.png")}
+            title="Wall-S"
+          />
+          <div className="project-details slideInRight slow">
+            <h2>Wall-S</h2>
+            <br />
+            <br />
+            <p>
+              React, Node, Express, ZeroMQ, Raspberry Pi, Arduino, Yolo object
+              detecion
+            </p>
+            <br />
+            <br />
+            <h3>Summary</h3>
+            <p className="summary">
+              Wall-s is a mobile robot that identifies and picks up trash, along
+              with a web app to view robot's camera stream
+            </p>
+          </div>
+          <Thumbnail
+            link="https://github.com/brentonjackson/emoji-recipes"
+            image={require("./content/hibernationhacks.png")}
+            title="Emoji-recipes"
+          />
+          <div className="project-details slideInRight slow">
+            <h2>Emoji-recipes</h2>
+            <br />
+            <br />
+            <p>Node, Express, Python, Selenium, Twilio</p>
+            <br />
+            <br />
+            <h3>Summary</h3>
+            <p className="summary">
+              Emoji-recipes is an sms app built with Twilio that accepts an
+              emoji text and responds with a recipe using the emoji as the main
+              ingredient
+            </p>
+          </div>
+          <Thumbnail
             link="https://flamboyant-golick-e73a92.netlify.app/"
             image={require("./content/workout-manager.png")}
             title="Workout App"
@@ -107,7 +171,7 @@ class Projects extends React.Component {
             </p>
           </div>
 
-          <Thumbnail
+          {/* <Thumbnail
             link="https://savagelashesatl.com"
             image={require("./content/savagelashesatl.png")}
             title="SavageLashesATL"
@@ -154,7 +218,7 @@ class Projects extends React.Component {
               account is free for single users/businesses. I'll have to explore
               other alternatives the next time I'm using WP.
             </p>
-          </div>
+          </div> */}
 
           {/* <Thumbnail
 			    		link="https://brentonjackson.github.io/vower"
